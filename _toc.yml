@@ -1,0 +1,29 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: 01_intro
+- file: 02_ifelse
+- file: 03_datatypes
+- file: 04_for
+- file: 05_functions
+- file: 06_mutability
+- file: 07_comments
+- file: 08_recursions
+- file: 09_loops
+- file: 10_tryexcept
+- file: 11_classes
+- file: 12_AI 
+- file: 13_viz
+- file: 14_dataio
+- file: 15_complexity
+- file: 16_numpyBasics
+- file: 17_numpyMV
+- file: 18_numpyPerformance
+- file: 19_numbers
+- file: 20_inheritance
+- file: 21_sympy 
+- file: 22_trees
+- file: 23_nn

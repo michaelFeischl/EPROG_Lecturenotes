@@ -1,0 +1,6 @@
+1: Das eilende Schiff, es kommt durch die Wogen
+2: Wie Sturmwind geflogen.
+3: Voll Jubel ertönt’s vom Mast und vom Kiele:
+4: "Wir nahen dem Ziele."
+5: Der Fährmann am Steuer spricht traurig und leise:
+6: "Wir segeln im Kreise."

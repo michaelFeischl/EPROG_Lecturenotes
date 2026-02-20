@@ -1,0 +1,2326 @@
+EINFÜHRUNG IN DAS MATHEMATISCHE ARBEITEN
+PAULA HILBERT UND DIRK PRAETORIUS
+1. Was ist Mathematik?
+Die normale Sprache im Alltag ist oft ungenau und missverständlich. Mathematik ist ei-
+ne Sprache und eine Denkweise, um die üblichen Ungenauigkeiten und Missverständnisse
+zu vermeiden. Dies ist insbesondere in der Wissenschaft und Technik unumgänglich.
+Die Mathematik macht allgemeingültige Aussagen über Mengen und abstrakte Struk-
+turen (wie Zahlen, Abbildungen und Räume). Als Ausgangspunkt verwendet man gewisse
+Grundtatsachen, die sogenannten Axiome, die von allen akzeptiert (oder geglaubt) wer-
+den. Mittels klar festgelegter logischer Regeln werden aus den Axiomen weitere Aussagen
+abgeleitet, die damit wahr sein müssen. Dieses Vorgehen nennt man auchlogisches Schlie-
+ßenoder Beweis.
+Anders als andere Wissenschaften ist die Mathematik eineexakte Wissenschaft: Ma-
+thematische Sätze und Theorien sind unmissverständlich, unumstößlich, nachvollziehbar
+undfürimmerwahr.DieMathematikarbeitetdabeimitabstraktenBegriﬀsbildungen,die
+aufgrund ihrer Allgemeinheit vielseitig anwendbar sind. Beispielsweise beschreibt dieAb-
+leitung einer Funktiondas qualitative und quantitative Änderungsverhalten einer Funk-
+tion in vielfältigen Situationen.
+Funktion Ableitung
+Ort eines Körpers zum Zeitpunktt Geschwindigkeit des Körpers
+Temperatur als Funktion der Zeitt Abkühlung oder Erwärmung des Körpers
+Masse als Funktion des Ortesx Massendichte
+Es gibt viele verschiedene Teilgebiete der Mathematik, die Sie im Zuge des Studiums
+noch sehen werden. Am Anfang des Studiums begegnet Ihnen zunächst Folgendes:
+•Grundlegende Objekte derAnalysis sind der Aufbau des Zahlsystems, reelle Funk-
+tionen, Grenzwerte, Stetigkeit, Ableitung und Integral.
+•Grundlegende Objekte derLinearen Algebrasind Vektorräume, lineare Abbildun-
+gen, Gleichungssysteme (und deren Lösungen) sowie die Eigenwerttheorie.
+Die Aufgabe derEinführung in das Mathematische Arbeitenist es, Ihnen eine Brücke von
+der Schulmathematik zur Universität zu schlagen.
+13. Oktober 2025 12. Elementare Logik und logisches Schließen
+Jede mathematische Aussage hat einenWahrheitswert: Sie ist entwederwahr (w)
+oder falsch (f). Eine mathematische Aussage darf also falsch sein. Dies ist aber meist
+der uninteressante Fall. Außerdem gibt es Aussagen, bei denen nicht bekannt ist, ob sie
+wahr oder falsch sind, z.B. die Goldbachsche Vermutung, die der deutsche Mathematiker
+Christian Goldbach 1742 in einem Brief an seinen Schweizer Kollegen Leonhard Euler
+formuliert: Jede gerade Zahl größer2 ist die Summe zweier Primzahlen.
+Die elementare Logik nutzt die folgenden Verknüpfungen von AussagenA und B, um
+neue Aussagen zu erzeugen (und zu bewerten):
+Negation ¬A nicht A entgegengesetzter Wahrheitswert
+zu A
+Disjunktion A∨B A oder B Genau dann wahr, wenn mindes-
+tens A oder B wahr sind
+Konjunktion A∧B A und B Genau dann wahr, wenn sowohlA
+als auchB wahr sind
+Implikation A⇒B
+B ⇐A
+aus A folgt B Genau dann falsch, wennA wahr
+und B falsch ist
+Äquivalenz A⇔B A und B sind äquivalent Genau dann wahr, wennA ⇒B
+und A⇐B gelten
+Diese Regeln sind in den folgenden Wahrheitswert-Tabellen zusammengefasst:
+•Negation
+A ¬A
+w f
+f w
+•Disjunktion und Konjunktion
+A B A∨B
+w w w
+w f w
+f w w
+f f f
+A B A∧B
+w w w
+w f f
+f w f
+f f f
+•Implikation und Äquivalenz
+13. Oktober 2025 2A B A⇒B A⇐B A⇔B
+w w w w w
+w f f w f
+f w w f f
+f f w w w
+Beachten Sie den Unterschied zur Umgangssprache bei der Implikation. Umgangs-
+sprachlich geht es bei der Implikation („Wenn..., dann ...!“) um eine Kausalität. Ma-
+thematisch geht es bei der Implikation nur um die klar deﬁnierte Verknüpfung von Wahr-
+heitswerten. Ist diePrämisse A einer ImplikationA ⇒B falsch, so ist die Implikation
+wahr (unabhängig vom Wahrheitswert derKonklusionB). Die folgende Aussage ist also
+mathematisch wahr:Wenn π= 3ist, dann ist7 eine gerade Zahl.
+Die genannten logischen Verknüpfungen formulieren die ersten Axiome des mathema-
+tischen Grundaufbaus. Formal muss man dabei nur¬und ∨fordern, da sich die ande-
+ren Verknüpfungen∧, ⇒und ⇔aus diesen herleiten lassen, wie man in den folgenden
+Wahrheitswert-Tabellen sieht. Wir verwenden dabei die Konvention, das¬stärker bin-
+det als die anderen logischen Verknüpfungen∧, ∨, ⇒und ⇔. Um die Eindeutigkeit einer
+logischen Aussage zu garantieren, müssen ggf. Klammern gesetzt werden.
+•A∧B ist äquivalent zu¬(¬A∨¬B), da sie stets denselben Wahrheitswert liefern:
+A B A∧B
+w w w
+w f f
+f w f
+f f f
+A B ¬A ¬B ¬A∨¬B ¬(¬A∨¬B)
+w w f f f w
+w f f w w f
+f w w f w f
+f f w w w f
+•A⇒B ist äquivalent zu¬A∨B, da sie stets denselben Wahrheitswert liefern:
+A B A⇒B
+w w w
+w f f
+f w w
+f f w
+A B ¬A ¬A∨B
+w w f w
+w f f f
+f w w w
+f f w w
+•A⇔B ist nach Deﬁnition äquivalent zu(A⇒B) ∧(A⇐B).
+Mathematische Beweise basieren auf logischen Schlüssen, d.h. der stringenten Anwen-
+dung von allgemeingültigen Aussagen über mathematische Gegenstände, sogenannten
+Tautologien. Dies sind Verknüpfungen von Aussagen, die unabhängig vom Wahrheits-
+wert ihrer Aussagen-logischen Teile immer wahr sind, beispielsweise
+•(A∧B) ⇔(¬(¬A∨¬B)),
+•(A⇒B) ⇔(¬A∨B),
+13. Oktober 2025 3wiewirebengesehenhaben.MankannTautologienleichtmitHilfegeeigneterWahrheitswert-
+Tabellen überprüfen.
+•Tautologie vom ausgeschlossenen Dritten: A∨¬A
+A ¬A A∨¬A
+w f w
+f w w
+Beispiel: Es regnet (A) oder es regnet nicht (¬A).
+•Tautologie der Konjunktionsbeseitigung: (A∧B) ⇒A
+A B A∧B (A∧B) ⇒A
+w w w w
+w f f w
+f w f w
+f f f w
+Beispiel: Wenn es regnet (A) und die Straße nass ist (B), dann regnet es (A).
+•Tautologie der Disjunktionseinführung: A⇒(A∨B)
+A B A∨B A⇒(A∨B)
+w w w w
+w f w w
+f w w w
+f f f w
+Beispiel: Wenn es regnet (A), dann regnet es (A) oder die Straße ist nass (B).
+•Tautologie von der Kontraposition: (A⇒B) ⇔(¬B ⇒¬A)
+A B A⇒B ¬A ¬B ¬B ⇒¬A (A⇒B) ⇔(¬B ⇒¬A)
+w w w f f w w
+w f f f w f w
+f w w w f w w
+f f w w w w w
+Beispiel: Die folgenden Aussagen sind äquivalent: Wenn es regnet (A), dann ist
+die Straße nass (B)! Wenn die Straße nicht nass ist (¬B), dann regnet es nicht
+(¬A)!
+•Modus ponendo ponens: [A∧(A⇒B)] ⇒B
+13. Oktober 2025 4A B A⇒B A∧(A⇒B) [A∧(A⇒B)] ⇒B
+w w w w w
+w f f f w
+f w w f w
+f f w f w
+Beispiel: Es regnet (A), und wenn es regnet, dann ist die Straße nass (A⇒B).
+Also ist die Straße nass (B).
+•Weitere Tautologien sehen Sie in der Übung.
+3. Direkter und indirekter Beweis
+Bei Beweisen unterscheidet man zwischendirekten Beweisenund indirekten Beweisen.
+Der direkte Beweis führt durch eine Folge von logischen Schlüssen zur Behauptung.
+Beim indirekten Beweisnimmt man an, die BehauptungB sei falsch und konstruiert
+dann mit logischen Schlüssen einen Widerspruch.
+DieserAbschnittsollIhnenersteBeispielefürdirekteundindirekteBeweiseimRahmen
+der Schulmathematik präsentieren, wobei wir die natürliche ZahlenN = {1,2,3,... }
+und einige ihrer elementaren Eigenschaften als gegeben voraussetzen. Wir nutzen im
+Folgenden das Symbol∈für Ist-ein-Element-von und schreibena ∈N, um abzukürzen,
+dass a eine natürliche Zahl ist.
+Um in der Mathematik klar zu formulieren, was an Notation oder Bezeichnungswei-
+se vorausgesetzt wird, formuliert man üblicherweiseDeﬁnitionen. Es ist wichtig, dass
+Deﬁnitionen klar und eindeutig sind, damit es nicht zu Missverständnissen kommt und
+damit klar ist, welche Eigenschaften die behandelten Objekte haben (d.h. was als wahr
+angenommen wird). Wenn man neue Notation deﬁniert, dann verwendet man meist das
+Symbol :=, um zu betonen, dass dies keine Gleichheit im mathematisch-logischen Sinn
+ist, sondern eine Gleichheit aufgrund von Deﬁnition (siehe dasProduktsymbol ∏in
+Satz 3.4).
+Deﬁnition 3.1.Eine Zahlt∈N ist einTeilervon a∈N, wenn es eine Zahla′∈N gibt
+mit a = ta′. Ferner istt ein echter Teilervon a, wenn zusätzlich1 < t < agilt. Eine
+Zahl p∈N ist einePrimzahl, wennp≥2 gilt und wenn1 und p die einzigen Teiler von
+p sind, d.h.p hat keine echten Teiler. Eine Zahla∈N ist gerade, wenn2 ein Teiler von
+a ist. Anderenfalls ist sieungerade.
+Unser erster Satz ist natürlich im Sinne der Schulmathematik oﬀensichtlich. Der Beweis
+soll Ihnen zeigen, wie man stringent nach einer gegebenen Deﬁnition argumentiert. Au-
+ßerdem illustriert er denBeweis der Kontraposition. Beachten Sie die erste Beweiszeile:
+Sei p∈N mit p≥3. Diese besagt gerade, dassp im Folgenden einebeliebige natürliche
+Zahl ≥3 ist. Beweise werden in diesem Skript immer mit dem Symbol□ abgeschlossen
+13. Oktober 2025 5(d.h. an dieser Stelle ist der Beweis vollständig). Andere Mathematiker*innen schreiben
+auchQED, qed, oderq.e.d. (lat. quod erat demonstrandum) oder nutzen andere Symbole.
+Satz 3.2. Jede Primzahlp≥3 ist ungerade, d.h.2 ist die einzige gerade Primzahl.
+Beweis. Sei p ∈N mit p ≥3. Wir müssen die Implikation[p Primzahl ⇒p ungerade]
+zeigen. Diese ist äquivalent zu ihrer Kontraposition[p gerade ⇒p nicht Primzahl]. Diese
+ist aber klar, denn jede gerade Zahl hat den Teiler2 und wegenp≥3 gilt p̸= 2. □
+Auch der folgende Satz ist natürlich im Sinne der Schulmathematik oﬀensichtlich. Der
+Beweis soll Ihnen nur zeigen, dass man eine Äquivalenz (genau dann, wenn... ) in der
+Regel dadurch zeigt, dass man beide Implikationen zeigt.
+Satz 3.3. Eine Zahla∈N ist genau dann ungerade, wenna+ 1gerade ist.
+Beweis. Wir unterteilen den Beweis in drei Schritte.
+Schritt 1 (a ungerade ⇒a+ 1gerade). Sei a ∈N ungerade, d.h. 2 ist kein
+Teiler vona. Also gilta ̸= 2n für alle n ∈N. Dann gibt es ein minimalesn ∈N mit
+a< 2n. Aufgrund der Minimalität vonn muss gelten, dass2n−2 = 2(n−1) ≤a< 2n.
+Das ≤muss dann sogar ein< sein, denn für= gilt
+•entweder n= 1und damita= 0(was nicht geht)
+•oder n> 1 und damit wären2 und n−1 Teiler vona (was auch nicht geht).
+Also muss< und damita= 2n−1 gelten, d.h.a+ 1 = 2n ist gerade.
+Schritt 2 (a+ 1gerade ⇒a ungerade). Sei a ∈N mit a+ 1 gerade, d.h. es
+existiert n ∈N mit a+ 1 = 2n. Dann ista = 2n−1 nicht durch2 teilbar und somit
+ungerade.
+Schritt 3 (aungerade ⇔a+ 1gerade). Mit Schritt 1 und 2 haben wir gezeigt,
+dass beide Implikationen wahr sind. Also ist die Äquivalenz wahr. □
+Kommentar. Eine Fallunterscheidung wie im Beweis von Satz 3.3 kommt relativ
+häuﬁg in Beweisen vor. Man muss dabei nur aufpassen, dass man alle formal möglichen
+Fälle berücksichtigt. Im Beweis von Satz 3.3 ist das sehr einfach, da fürn∈N entweder
+n= 1oder n> 1 gilt.
+Der folgende Satz formuliert die Existenz der Primfaktorzerlegung. Dazu nutzen wir
+einen indirekten Beweis, der auf der Tautologie vom ausgeschlossenen Dritten basiert. Im
+Zuge der vollständigen Induktion werden wir später einen alternativen Beweis sehen.
+Satz 3.4 (Existenz der Primfaktorzerlegung). Für jede Zahl a ∈ N mit a ≥ 2
+existieren n∈N und n-viele Primzahlenp1,...,p n ∈N mit a= ∏n
+j=1 pj := p1 ·p2 ···pn.
+Beweis. Wir nehmen an, die Aussage des Satzes ist falsch, d.h. es gibt mindestens eine
+natürliche Zahl ≥2, die sich nicht als Produkt von Primzahlen schreiben lässt. Da die
+natürlichen Zahlen nach unten beschränkt sind, existiert eine kleinste Zahla ∈N mit
+a ≥2, die sich nicht als Produkt von Primzahlen schreiben lässt. Nach der Tautologie
+13. Oktober 2025 6vom ausgeschlossenen Dritten ist diese Zahl entweder eine Primzahl oder keine Primzahl.
+Wir machen wieder eine Fallunterscheidung:
+Fall 1 (aist eine Primzahl). Wäre aeine Primzahl, so wären:= 1und p1 := aeine
+Primfaktorzerlegung, d.h.a= ∏1
+j=1 pj. Aberahat nach Wahl keine Primfaktorzerlegung,
+d.h. a ist keine Primzahl. Also kann dieser Fall nicht eintreten.
+Fall 2 (a ist keine Primzahl). Dann gibt es echte Teilert,a′ ∈N mit a = ta′.
+Da a die kleinste natürliche Zahl ohne Primfaktorzerlegung ist, habent und a′ Primfak-
+torzerlegungen, d.h. t = p1 ···pk und a′ = pk+1 ···pn für geeignete Primzahlenpj und
+geeignete k,n ∈N. Dann hat abera die Primfaktorzerlegung a = ta′ = p1 ···pn. Wir
+bekommen also wieder einen Widerspruch dazu, dassa keine Primfaktorzerlegung hat.
+Also kann auch dieser Fall nicht eintreten.
+Insgesamt muss also die Annahme, dass es natürliche Zahlen gibt, die sich nicht als
+Produkt von Primzahlen schreiben lassen, falsch sein. Also lässt sich jede natürliche Zahl
+als Produkt von Primzahlen schreiben, d.h. die Aussage des Satzes ist wahr □
+Kommentar. Im vorausgegangenen Beweis haben wir wie folgt argumentiert:
+Wäre a eine Primzahl, so wären := 1 und p1 := a eine Primfaktorzerle-
+gung. Aber a hat nach Wahl keine Primfaktorzerlegung, d.h.a ist keine
+Primzahl.
+Implizit handelt es sich dabei entweder um ein indirektes Argument (Angenommen, dassa
+eine Primzahl ist. Dann hataeine Primfaktorzerlegung. Dies liefert einen Widerspruch.)
+oder (richtiger!) um die Verwendung der Kontraposition (Jede Primzahl hat eine Prim-
+faktorzerlegung. Daa keine Primfaktorzerlegung hat, ista keine Primzahl).
+Ein hübsches Beispiel für einen indirekten Beweis ist auch das folgende Resultat, das
+bereits auf Euklid zurückgeht. Weil das Resultat gewissermaßen mittels „einfacher Ar-
+gumente“ aus der Existenz der Primfaktorzerlegung folgt, bezeichnen wir es alsKorollar
+(des vorausgegangenen Satzes). Dabei ist wichtig festzuhalten, dass man bereits bewie-
+sene mathematische Resultate (wie eben Satz 3.4) verwenden kann, darf und soll, wenn
+deren Voraussetzungen erfüllt sind.
+Korollar 3.5.Es gibt unendlich viele Primzahlen.
+Beweis. Wir nehmen an, die Aussage ist falsch, d.h. es gibt nur endlich viele Primzahlen
+p1,...,p n. Wir deﬁnierenq := p1 ·p2 ···pn + 1. Dann giltq ∈N. Ferner liefert Division
+durch p1,...,p n stets Rest 1, d.h. q ist durch keine Primzahl teilbar. Das ist aber ein
+Widerspruch zur Existenz der Primfaktorzerlegung von Satz 3.4. Also muss auch die
+Aussage, dass es nur endlich viele Primzahlen gibt, falsch sein. Also gibt es unendlich
+viele Primzahlen, d.h. die Aussage des Korollars ist wahr. □
+DafüreinenTeiler tvonaimmert≤aist,hateineZahl anurendlichvieleverschiedene
+Teiler. Da1 ein Teiler aller Zahlena∈N ist, ist die folgende Deﬁnition sinnvoll.
+13. Oktober 2025 7Deﬁnition 3.6. Es sei g ein gemeinsamer Teiler vona,b ∈N, sodass für alle anderen
+gemeinsamen Teilert ∈N von a und b gilt t ≤g. Dann bezeichnet mang als größten
+gemeinsamen Teilervon a und b, und wir nutzen die SchreibweiseggT(a,b) := g.
+Mathematische Aussagen (z.B. Sätze, Korollare) haben häuﬁg die Form einer Implika-
+tion, d.h. es wird behauptet, dass die AussageA⇒B wahr ist: Wenn die Voraussetzung
+/ Prämisse A wahr ist, dann ist auchB wahr. Falls A falsch ist, wird keine Aussage
+gemacht, obB wahr ist. Dies ist auch der Fall im folgenden Resultat, das später nur als
+Hilfsresultat im Beweis von Satz 3.9 verwendet und deshalb alsLemma bezeichnet wird.
+Lemma 3.7. Es seiena,b ∈N mit a < b. Dann giltggT(a,b) =ggT(a,b −a), d.h. der
+größte gemeinsame Teiler vona und b ist auch der größte gemeinsame Teiler vona und
+b−a.
+Beweis. Wir unterteilen den Beweis in drei Schritte.
+Schritt 1 (ggT(a,b) ≤ggT(a,b −a)). Zunächst seig ∈N ein Teiler vona und
+b, d.h. es gibt Zahlena′,b′ ∈N mit a= ga′ und b= gb′. Daa < bgilt, gilt aucha′ < b′
+und deshalbc′ := b′−a′ ∈N mit b−a = gb′−ga′ = gc′. Wir haben also gezeigt, dass
+jeder Teiler vonaund bauch ein Teiler vonb−aist. Insbesondere istggT(a,b) ein Teiler
+von b−a und somitggT(a,b) ≤ggT(a,b −a).
+Schritt 2 (ggT(a,b −a) ≤ggT(a,b)). Nun seig∈N ein Teiler vonaund b−a,
+d.h. es gibt Zahlena′,c′ ∈N mit a = ga′ und b−a = gc′. Dann giltb = a+ (b−a) =
+ga′+ gc′ = g(a′+ c′), d.h.g ist auch ein Teiler vonb. Insbesondere istggT(a,b −a) ein
+Teiler vonb und somitggT(a,b −a) ≤ggT(a,b).
+Schritt 3. Da wir beide Ungleichungen gezeigt haben, folgt insgesamt die Behaup-
+tung: ggT(a,b) =ggT(a,b −a). □
+Das vorausgegangene Lemma erlaubt es, auf einfache Weise (und ohne Verwendung
+der Primfaktorzerlegung) den größten gemeinsamen Teiler zweier positiver ganzer Zahlen
+zu bestimmen:
+Algorithmus 3.8 (Euklid).Input: Es seien a,b ∈N gegeben undg := ggT(a,b) ge-
+sucht.
+Wiederhole die folgenden Schritte(i)–(ii), bisa= b gilt:
+(i) Vertausche a und b, falls a>b .
+(ii) Ersetze b durch b−a.
+Output: Sobald der Algorithmus terminiert, istg= a= b der gesuchte Wert.
+Auch solche Algorithmen muss man mathematisch analysieren, um zu garantieren, dass
+sie wirklich das behauptete Ergebnis liefern. Mit Hilfe von Lemma 3.7 kann man zeigen,
+dass der Euklidische Algorithmus für allea,b ∈N in der Tat den größten gemeinsamen
+TeilerggT(a,b) berechnet.
+13. Oktober 2025 8Satz 3.9. Für allea,b ∈N bricht Algorithmus 3.8 nach endlich vielen Schritten ab und
+liefert den größten gemeinsamen TeilerggT(a,b).
+Beweis. Wir gliedern den Beweis in drei Schritte.
+Schritt 1 (a= b). Falls a = b ist, gilt oﬀensichtlichggT(a,b) = a = b, und Algo-
+rithmus 3.8 terminiert.
+Schritt 2 (a̸= b). Falls a ̸= b ist, gilt natürlich g = ggT(a,b) = ggT(b,a), d.h.
+Algorithmus 3.8(i) hat keinen Einﬂuss auf das gesuchtegund stellt sicher, dass wir wegen
+a<b das Hilfsresultat aus Lemma 3.7 anwenden können: Es gilt alsog = ggT(a,b −a),
+d.h. Algorithmus 3.8(ii) hat auch keine Auswirkung auf das gesuchteg.
+Schritt 3 (Algorithmus 3.8 terminiert). Wir müssen uns nur noch überlegen,
+dass Algorithmus 3.8 nach endlich vielen Schritten mita= b abbricht: In jedem Durch-
+lauf von Algorithmus 3.8(i)–(ii) mit a ̸= b erzwingen wir b > a und überschreiben
+b = max(a,b) durch b−a. Wegen a,b ∈N und b > agilt b−a ∈N mit b−a < b.
+Also wird das Maximummax(a,b) um mindestens 1 kleiner. Da N nach unten durch1
+beschränkt ist, kann der Algorithmus nur endlich viele Schritte machen. Da er nur für
+a= b abbricht, muss nach endlich vielen Schrittena= b gelten, sodass Algorithmus 3.8
+wirklich mit dem behaupteten Ergebnis terminiert. □
+Kommentar. Wie Sie beim Lesen der Beweise vermutlich gemerkt haben, handelt es
+sich bei Beweisen nicht um hohe Prosa. Um die Nachvollziehbarkeit zu erleichtern, ver-
+wenden wir kurze Sätze. Gleiche Argumente werden mit gleicher Wortwahl formuliert
+(d.h. bewusste Wortwiederholung). Aus diesem Grund sollten Argumente auch immer mit
+„Weil... , gilt... “formuliert werden (anstelle von„Es gilt... , weil... “). In jedem Fall sind
+mathematische Formeln und logischen Aussagen in der mathematischen Schriftsprache
+immer Teile von vollständigen Sätzen (und insbesondere gelten die Regeln der Interpunk-
+tion).
+Kommentar. Wie Sie in den vorausgegangenen Beweisen gesehen haben, verwendet ein
+direkter Beweismeistens den Modus ponendo ponens: Da die (als wahr vorausgesetz-
+te) VoraussetzungA und die ImplikationA⇒B wahr sind, muss auchB wahr sein. Da
+B und die ImplikationB ⇒C wahr sind, muss auchC wahr sein, etc; siehe beispiels-
+weise den Beweis von Lemma 3.7. Manchmal kann/darf/muss man aber auch andere
+Tautologien verwenden, z.B. die Kontraposition im Beweis von Satz 3.2.
+Beim indirekten Beweisnimmt man an, dass die BehauptungB falsch (f) ist. Man
+zeigt dann mittels logischer Schlüsse (d.h. wie beim direkten Beweis), dass unter der (als
+wahr vorausgesetzten) Voraussetzung A und der Annahme ¬B die Implikation [ (A ∧
+¬B) ⇒f ] wahr ist. Diese ist aber nach elementarer Aussagenlogik genau dann wahr,
+wenn ¬B falsch und somitB wahr ist; siehe den Beweis von Satz 3.4 oder den Beweis
+von Korollar 3.5. Im Beweis von Satz 3.4 gibt es augenscheinlich keine Voraussetzungen
+13. Oktober 2025 9(außer den „natürlichen“ Eigenschaften vonN). In einem solchem Fall istA einfach als
+wahr (w) zu verstehen, sodass sich die gezeigte Implikation zu[¬B ⇒f] vereinfacht (und
+¬B als falsch beweist).
+Kommentar. Es ist wichtig, dass Sie zwischen der Tafelpräsentation in Ihren Vorlesun-
+gen (und Übungen) und der mathematischen Schriftsprache unterscheiden. Wenn man
+an der Tafel präsentiert, verwendet man häuﬁg logische Symbole ungenau (insbesondere
+Implikation ⇒und Äquivalenz⇔), um die Präsentation abzukürzen, z.B.
+•⇒ zur Abkürzung von:„Daraus folgt, dass... “
+•⇔ zur Abkürzung von:„Dies ist äquivalent zu... “
+Viele Vortragende kürzen auch Deﬁnitionen ab, z.B.
+•
+def
+⇐⇒bzw. :⇐⇒zur Abkürzung von:„deﬁniert als“oder „gemäß Deﬁnition“
+Sie sehen diese Unterschiede, wenn Sie in der Vorlesung mitschreiben und Ihre Mitschrift
+mit der Präsentation im zugehörigen Skript oder Buch vergleichen. Spätestens bei Se-
+minararbeit und Bachelorarbeit müssen Sie jedenfalls die mathematische Schriftsprache
+korrekt verwenden.
+4. Logische Quantoren und vollständige Induktion
+Wie Sie in den vorausgegangenen Sätzen und Korollaren gesehen haben, nutzt die
+Mathematik häuﬁg Formulierungen der Art:
+•Für allen∈N...
+•Es existiert eink∈N...
+Die Schriftsprache tendiert dazu, bisweilen nicht eindeutig oder missverständlich zu sein.
+In der Mathematik ist aber gerade dies ein erklärtes Ziel. Aus diesem Grund gibt es die
+sogenannten (logischen) Quantoren: Wir unterscheiden denAll-Quantor∀(für alle)
+und den Existenz-Quantor ∃(es existiert (mindestens) ein). Ferner wird häuﬁg die
+eindeutige Existenzmit ∃! oder ∃1 (es existiert ein eindeutiges) bezeichnet. Schließlich
+bezeichnet ̸∃ oft dieNicht-Existenz(es gibt kein).
+Ketten von Quantoren sind immer von links nach rechts zu lesen und in diesem Sinn
+eindeutig (z.B. ∀T Topf∃D Deckel : ... bedeutet: „Für jeden Topf existiert ein Deckel,
+sodass...“ undebennicht(!): „Es existiert ein Deckel, der auf jeden Topf passt, sodass...“)
+Viele Mathematiker*innen schreiben am Ende einer Quantorenkette den Doppelpunkt als
+Abkürzungvon: „sodass gilt...“.EinBeistrichnacheinemQuantorwirdmeistals „mit der
+Eigenschaft“gelesen (vgl. Satz 4.3(iii)), manchmal schreibt man aber auch explizit„mit“
+statt des Beistrichs. Ferner verwendet man in der Regel die Konvention, dass die logischen
+Verknüpfungen ¬, ∧, ∨, ⇒und ⇔stärker binden als die logischen Quantoren. Jenseits
+davon müssen Klammern gesetzt werden, um eine Aussage wirklich unmissverständlich
+zu formulieren.
+13. Oktober 2025 10Kommentar. Es kann sinnvoll sein, bei Quantoren-Aussagen Klammern zu setzen, da-
+mit die Aussage eindeutig und klar ist. Beispielsweise sind die Aussagen
+•∀n∈N : A(n) ⇒B (nach Konvention äquivalent zu ∀n∈N : [A(n) ⇒B])
+•
+[
+∀n∈N : A(n)
+]
+⇒B
+oﬀensichtlich nicht äquivalent.
+Bemerkung 4.1.Im Folgenden seiA(n) eine Aussage in Abhängigkeit einer natürlichen
+Zahl n∈N.
+(i) Die All-Quantor-Aussage [∀n ∈N : A(n)] ist nach Deﬁnition des Quantors
+genau dann wahr, wennA(n) für allen∈N wahr ist, d.h. die Aussage entspricht
+einem iterierten Und:A(1) ∧A(2) ∧A(3) ∧... .
+(ii) Die Existenz-Quantor-Aussage[∃n∈N : A(n)] ist nach Deﬁnition des Quan-
+tors genau dann wahr, wenn es (mindestens) einn ∈N gibt, für dasA(n) wahr
+ist, d.h. die Aussage entspricht einem iterierten Oder:A(1) ∨A(2) ∨A(3) ∨... .
+(iii) Die All-Quantor-Aussage ist genau dann falsch, wenn es einn0 ∈N gibt, für das
+¬A(n0) wahr ist, d.h. es gilt
+¬[∀n∈N : A(n)] ⇔ [∃n0 ∈N : ¬A(n0)].
+Dieses n0 bezeichnet man dann auch alsGegenbeispielder All-Quantor-Aussage,
+weil A(n0) zeigt, dass die All-Quantor-Aussage falsch ist.
+(iv) Insbesondere ist die Existenz-Quantor-Aussage genau dann falsch, wenn für alle
+n∈N gilt, dass¬A(n) wahr ist, d.h. es gilt
+¬[∃n0 ∈N : A(n0)] ⇔ [∀n∈N : ¬A(n)].
+Nach Deﬁnition ist dies auch äquivalent zur Aussage, dass keinn ∈N existiert
+mit A(n), d.h.
+[̸∃n0 ∈N : A(n0)]
+def
+⇐⇒ [∀n∈N : ¬A(n)].
+Beispiel 4.2. Eine Zahlp∈N ist genau dann eine Primzahl, wennp≥2 gilt und wenn
+1 und p die einzigen Teiler vonp sind. Dies entspricht der Aussage
+(p≥2) ∧
+[
+∀n∈N :
+(
+(n teilt p) ⇒(n= 1∨n= p)
+)]
+.
+Also istpkeine Primzahl, wenn diese Aussage falsch ist. Mit der Tautologie
+[
+¬(A∧B) ⇔
+(¬A∨¬B)
+]
+ist p also keine Primzahl, wenn
+¬(p≥2) ∨¬
+[
+∀n∈N :
+(
+(n teilt p) ⇒(n= 1∨n= p)
+)]
+.
+Die Aussage¬(p≥2) ist äquivalent zup< 2 und wegenp∈N deshalb zup= 1. Also ist
+die Aussage, dassp keine Primzahl ist, äquivalent zu
+13. Oktober 2025 11p= 1∨¬
+[
+∀n∈N :
+(
+(n teilt p) ⇒(n= 1∨n= p)
+)]
+.
+Aufgrund der Negation der All-Quantor-Aussage ist dies äquivalent zu
+p= 1∨
+[
+∃n∈N : ¬
+(
+(n teilt p) ⇒(n= 1∨n= p)
+)]
+.
+Mit der Tautologie
+[
+(A⇒B) ⇔(¬A∨B)
+]
+ist dies äquivalent zu
+p= 1∨
+[
+∃n∈N : ¬
+(
+¬(n teilt p) ∨n= 1∨n= p
+)]
+.
+Mit der Tautologie
+[
+¬(A∨B∨C) ⇔(¬A∧¬B∧¬C)
+]
+ist dies abschließend äquivalent
+zu
+p= 1∨
+[
+∃n∈N :
+(
+(n teilt p) ∧n̸= 1∧n̸= p
+)]
+.
+Diese Aussage ist also dazu äquivalent, dassp keine Primzahl ist. □
+Kommentar. In einer Tafelpräsentation würde man Beispiel 4.2 vermutlich folgender-
+maßen abkürzen, um Schreibarbeit zu sparen: Fürp∈N gilt nach Deﬁnition
+p Primzahl
+def
+⇐⇒ (p≥2) ∧
+[
+∀n∈N :
+(
+(n teilt p) ⇒(n= 1∨n= p)
+)]
+.
+Durch Negation dieser Aussage erhalten wir die folgenden Äquivalenzen:
+p keine Primzahl ⇐⇒ p= 1∨¬
+[
+∀n∈N :
+(
+(n teilt p) ⇒(n= 1∨n= p)
+)]
+⇐⇒ p= 1∨
+[
+∃n∈N : ¬
+(
+(n teilt p) ⇒(n= 1∨n= p)
+)]
+⇐⇒ p= 1∨
+[
+∃n∈N : ¬
+(
+¬(n teilt p) ∨n= 1∨n= p
+)]
+⇐⇒ p= 1∨
+[
+∃n∈N :
+(
+(n teilt p) ∧n̸= 1∧n̸= p
+)]
+.
+Beachten Sie, dass hier das Äquivalenz-Symbol⇐⇒formal unsauber verwendet wird zur
+reinen Abkürzung der Präsentation:[(A⇔B) ⇔C] (was dort steht) ist natürlich nicht
+äquivalent zu[(A⇔B) ∧(B ⇔C)] (was aber natürlich gemeint ist).
+Kommentar. Auch bei den logischen Quantoren ist es wichtig, dass Sie zwischen der
+Tafelpräsentation in Ihren Vorlesungen (und Übungen) und der mathematischen Schrift-
+sprache unterscheiden. Häuﬁg werden die Quantoren nur verwendet, um die Präsentation
+abzukürzen, z.B.
+•∀x∈N wird ans Ende eines Satzes oder einer Formel geschrieben zur Abkürzung
+von „für allex∈N“;
+•∃x ∈N wird im Text verwendet, um abzukürzen, dass es einx mit einer Eigen-
+schaft gibt und dass diesesx im Folgenden auch betrachtet wird.
+Achten Sie auf die (ggf. formal unsaubere) Verwendung der Quantoren in Ihren Vorle-
+sungen! Bei Seminararbeit und Bachelorarbeit müssen Sie jedenfalls die mathematische
+Schriftsprache korrekt verwenden, d.h. eine Quantor(en)-Aussage ist eine Aussage. Diese
+kann wahr oder falsch sein, mehr aber auch nicht!
+Kommentar. Unsere Notation und Verwendung von Quantoren ist in der Mathematik
+weithin verbreitet. Im Sinne der formalen Prädikatenlogik ist aber auch unsere Verwen-
+dung formal falsch. Die formale Prädikatenlogik schreibt
+13. Oktober 2025 12∀n:
+[
+n∈N ⇒A(n)
+]
+(„Für allen gilt, dassn∈N auch A(n) impliziert.“)
+anstelle von
+∀n∈N : A(n) („Für allen∈N gilt A(n).“).
+Analog schreibt die formale Prädikatenlogik
+∃n:
+[
+n∈N ∧A(n)
+]
+(„Es existiert einn mit n∈N und A(n).“)
+anstelle von
+∃n∈N : A(n) („Es existiert einn∈N mit A(n).“).
+Sie sehen also, dass der Doppelpunkt in manchen Formeln eine Implikation (⇒) und in
+anderen Formeln ein logisches Und (∧) versteckt. In der mathematischen Praxis ist das
+aber wenig fehleranfällig.
+Das Beweisprinzip der vollständigen Induktionist eine Beweistechnik, um zu zeigen,
+dass eine Aussage der Form
+∀n∈N : A(n)
+wahr ist, d.h. man hat eine AussageA(n) in Abhängigkeit einer natürlichen Zahln∈N
+und will zeigen, dass diese Aussage für allen∈N wahr ist; siehe Beispiel 4.5 unten.
+Im folgenden Satz bedeutetpaarweise äquivalent, dass alle drei Äquivalenzen gelten:
+(i) ⇔(ii), (i) ⇔(iii) und (ii) ⇔(iii). Da eine ÄquivalenzA ⇔B von zwei Aussa-
+gen A und B nach Deﬁnition genau dann wahr ist, wenn beide ImplikationenA ⇒B
+und A ⇐B wahr sind, könnte man also insgesamt sechs Implikationen zeigen. Es geht
+aber bisweilen eﬃzienter. Wir werden in drei Schritten zeigen, dass die folgenden drei
+Implikationen gelten: (i)⇒(ii), (ii) ⇒(iii) und (iii) ⇒(i). Man bezeichnet dies als
+Ringschluss. Mittels elementarer Logik folgen aus diesen drei Implikationen tatsächlich
+die genannten drei Äquivalenzen, d.h. die Aussagen (i)–(iii) sind paarweise äquivalent.
+Satz 4.3 (vollständige Induktion).Es sei A(n) eine Aussage in Abhängigkeit einer
+natürlichen Zahln∈N. Dann sind die folgenden drei Aussagen(i)–(iii) paarweise äqui-
+valent:
+(i) A(n) ist wahr für allen∈N, d.h.
+∀n∈N : A(n).
+(ii) Induktionsprinzip: A(1) ist wahr und für allen∈N gilt: WennA(n) wahr ist,
+dann ist auchA(n+ 1)wahr, d.h.
+A(1) ∧[∀n∈N : A(n) ⇒A(n+ 1)]
+(iii) Starkes Induktionsprinzip:A(1) ist wahr und für allen∈N gilt: WennA(k)
+wahr ist für allek= 1,...,n , dann ist auchA(n+ 1)wahr, d.h.
+A(1) ∧
+[
+∀n∈N :
+(
+∀k∈N,k ≤n: A(k)
+)
+⇒A(n+ 1)
+]
+.
+13. Oktober 2025 13Beweis. Schritt 1 ((i)⇒(ii)). Wir setzen voraus, dass (i) wahr ist, d.h.A(n) ist wahr
+für allen∈N. Insbesondere ist alsoA(1) wahr. Für (ii) müssen wir noch für allen∈N
+die Implikation[A(n) ⇒A(n+ 1)]zeigen. Diese ist aber klar, da für jedesn ∈N nach
+Voraussetzung A(n) und A(n+ 1)wahr sind. Also gilt (ii).
+Schritt 2 ((ii)⇒(iii)). Wir setzen voraus, dass (ii) wahr ist, d.h.A(1) ist wahr und
+für allen ∈N gilt die Implikation[A(n) ⇒A(n+ 1)]. Tatsächlich ist für (iii) nur noch
+die folgende Implikation für allen∈N zu zeigen:(A(1) ∧···∧ A(n)) ⇒A(n+ 1). Dies
+ist aber natürlich erfüllt, denn es gelten die Implikationen[(A(1) ∧···∧ A(n)) ⇒A(n)]
+und nach Voraussetzung[A(n) ⇒A(n+ 1)].
+Schritt 3 ((iii)⇒(i)). Wir setzen voraus, dass (iii) wahr ist. Damit ist zunächst
+A(1) wahr. Wir nehmen an, dass die Aussage von (i) falsch ist, d.h. es gibt (mindestens)
+ein n ∈N, für dasA(n) falsch ist. Sei alsoN die kleinste natürliche Zahl, für dieA(N)
+falsch ist. Klarerweise giltN >1, dennA(1) ist wahr. Aufgrund der Minimalität vonN
+gilt ferner, dassA(k) wahr ist für allek= 1,...,N −1. Dies steht aber im Widerspruch
+zu (iii): Für allen∈N (und damit auch fürn= N −1) mussA(n+ 1)wahr sein (also
+A(N) wahr sein), wennA(1)∧···∧ A(n) wahr ist. Also ist unsere Annahme falsch, d.h. (i)
+muss wahr sein. □
+Bemerkung4.4(BeweisprinzipdervollständigenInduktion). Nach Satz 4.3 kann
+man folgendermaßen vorgehen, wenn man zeigen will, dass eine AussageA(n) für alle
+n∈N wahr ist:
+(a) Man zeigt zunächst imInduktionsanfang, dassA(1) wahr ist. Dann macht man
+die Induktionsvoraussetzung, dass für ein beliebigesn ∈N die AussageA(n)
+wahr ist. ImInduktionsschritt muss man zeigen, dass daraus bereits folgt, dass
+A(n+ 1)wahr ist.
+(b) Anstelle der schwachen Induktionsvoraussetzung aus(a) darf man auch diestarke
+Induktionsvoraussetzung machen, dass für ein beliebigesn ∈N die Aussagen
+A(k) für alle k= 1,...,n wahr sind.
+Hat man den Induktionsschritt (mit Induktionsvoraussetzung in(a) bzw. starker Indukti-
+onsvoraussetzung in(b)) gezeigt, so folgt aus der Äquivalenz(i) ⇔(ii) bzw. (i) ⇔(iii) in
+Satz 4.3, dass die AussageA(n) tatsächlich für allen∈N wahr ist.
+Im Folgenden geben wir einige Beispiele für die vollständige Induktion, wobei wir im
+folgenden Beispiel 4.5 auch dasSummensymbol ∑als Notation einführen.
+Beispiel 4.5. Für n∈N betrachte die Summe∑n
+j=1 j := 1 + 2 + 3 +··· + n. Dann gilt
+n∑
+j=1
+j = n(n+ 1)
+2 für alle n∈N.
+Wir betrachten die AussageA(n), dass∑n
+j=1 j = n(n+1)
+2 gilt. Wir wollen mittels vollstän-
+diger Induktion nachn beweisen, dassA(n) für alle n∈N wahr ist.
+13. Oktober 2025 14Induktionsanfang: Für n= 1gilt ∑n
+j=1 j = ∑1
+j=1 j = 1 =1·2
+2 = n(n+1)
+2 , d.h.A(1) ist
+wahr.
+Induktionsvoraussetzung: Sei n∈N. Es gelte∑n
+j=1 j = n(n+1)
+2 , d.h.A(n) ist wahr.
+Induktionsschritt: Wir müssen zeigen, dass∑n+1
+j=1 j = (n+1)(n+2)
+2 gilt, d.h. A(n+ 1)
+ist wahr. Dazu beobachten wir, dass laut Induktionsvoraussetzung gilt
+n+1∑
+j=1
+j = (n+ 1) +
+n∑
+j=1
+j = (n+ 1) +n(n+ 1)
+2 = 2(n+ 1) +n(n+ 1)
+2 = (n+ 2)(n+ 1)
+2 .
+Damit ist aber der Induktionsschritt gezeigt. Also gilt∑n
+j=1 j = n(n+1)
+2 für allen∈N. □
+Manchmal will man beweisen, dass eine Aussage für allen∈N mit n≥n0 gilt. Auch
+dies geht mit vollständiger Induktion.
+Korollar 4.6. Sei n0 ∈ N. Ferner sei A(n) eine Aussage in Abhängigkeit einer na-
+türlichen Zahl n ∈N mit n ≥n0. Dann sind die folgenden drei Aussagen paarweise
+äquivalent:
+(i) A(n) ist wahr für allen∈N mit n≥n0, d.h.
+∀n∈N,n ≥n0 : A(n).
+(ii) A(n0) ist wahr und für allen∈N mit n≥n0 gilt: WennA(n) wahr ist, dann ist
+auch A(n+ 1)wahr, d.h.
+A(n0) ∧
+(
+∀n∈N,n ≥n0 : A(n) ⇒A(n+ 1)
+)
+(iii) A(n0) ist wahr und für allen ∈N mit n ≥n0 gilt: WennA(k) wahr ist für alle
+k= n0,...,n , dann ist auchA(n+ 1)wahr, d.h.
+A(n0) ∧
+[
+∀n∈N,n ≥n0 :
+(
+∀k∈N,n0 ≤k≤n: A(k)
+)
+⇒A(n+ 1)
+]
+.
+Beweis. Wir deﬁnieren die Aussage˜A(n) :=A(n+n0 −1) für allen∈N. Dann gilt für die
+Aussagen ˜A(·) der Satz 4.3 über die vollständige Induktion. Wie man leicht sieht, ist die
+Aussage fürA(·) von Korollar 4.6(i) äquivalent zu der Aussage für˜A(·) von Satz 4.3(i),
+d.h. es gilt
+[∀n∈N,n ≥n0 : A(n)] ⇔ [∀n∈N : ˜A(n)]
+Die analoge Äquivalenz gilt auch für die jeweiligen Aussagen (ii) und (iii) von Korollar 4.6
+und Satz 4.3. Über die Äquivalenzen von Satz 4.3 erhält man also, dass auch die Aussagen
+(i)–(iii) von Korollar 4.6 paarweise äquivalent sind. □
+Bemerkung 4.7. Mit demselben Vorgehen wie in Korollar 4.6 kann man ein Indukti-
+onsprinzip herleiten, um eine AussageA(n) für allen∈Z = {0,±1,±2,... }mit n≥n0
+oder für allen∈Z mit n≤n0 zu zeigen.
+13. Oktober 2025 15Das folgende Beispiel nutzt das Induktionsprinzip nach Korollar 4.6(iii) fürn0 = 2,
+um einen alternativen Beweis von Satz 3.4 über die Existenz der Primfaktorzerlegung zu
+geben.
+Beispiel 4.8. Als Beispiel für die Anwendung der starken Induktionsvoraussetzung be-
+trachten wir folgende Aussage fürn∈N mit n≥2:
+A(n): Es existieren ein Indexk∈N und Primzahlenp1,...,p k ∈N mit n= ∏k
+j=1 pj.
+Wir nutzen nun vollständige Induktion, um zu zeigen, dassA(n) für allen∈N mit n≥2
+wahr ist.
+Induktionsanfang: Für n= 2geben k:= 1und p1 := ndie Primfaktorzerlegung, d.h.
+A(2) ist wahr.
+Induktionsvoraussetzung: Sei n∈N mit n≥2. Es gelte, dass für jede ZahlN ∈N
+mit 2 ≤N ≤n ein Index k ∈N und k-viele Primzahlen p1,...,p k ∈N existieren mit
+N = ∏k
+j=1 pj.
+Induktionsschritt: Wir müssen zeigen, dass zun+ 1ein Indexk∈N und Primzah-
+len p1,...,p k ∈N existieren mit n+ 1 =∏k
+j=1 pj. Dabei können zwei Fälle auftreten:
+Entweder istn+ 1eine Primzahl, odern+ 1ist keine Primzahl.
+Fall 1: Falls n+ 1eine Primzahl ist, so können wir wie beim Induktionsanfang ar-
+gumentieren. Wir deﬁnierenk := 1und p1 := n+ 1und haben die gesuchte Primfaktor-
+zerlegung gefunden.
+Fall 2: Falls n+ 1keine Primzahl ist, hatn+ 1zwei echte Teiler, d.h.n+ 1 =ab
+mit a,b ∈N und 2 ≤a,b < n+ 1. Insbesondere können wir füra und b die Induktions-
+voraussetzung anwenden, d.h. es gibt Indizesℓ,m ∈N und Primzahlen p1,...,p ℓ sowie
+q1,...q m mit a= ∏ℓ
+j=1 pj und b= ∏m
+j=1 qj. Deﬁnieren wirk := ℓ+ m und pℓ+j := qj für
+alle j = 1,...,m , so folgt (mit einem Index-Shift im Produkt bei
+!
+=)
+n+ 1 =ab=
+( ℓ∏
+j=1
+pj
+)( m∏
+j=1
+qj
+)
+=
+( ℓ∏
+j=1
+pj
+)( m∏
+j=1
+pℓ+j
+)
+!
+=
+( ℓ∏
+j=1
+pj
+)( ℓ+m∏
+j=ℓ+1
+pj
+)
+=
+k∏
+j=1
+pj.
+Auch in diesem Fall haben wir die gesuchte Primfaktorzerlegung gefunden. Damit ist der
+Induktionsschritt gezeigt, d.h. jedesn∈N mit n≥2 hat eine Primfaktorzerlegung. □
+Kommentar. Die Mathematik hat eine innere Ästhetik („elegante Beweise“), die schwer
+zu beschreiben ist, die Sie aber sicher im Zuge des Studiums wahrnehmen werden. Jeden-
+falls strebt man oft danach, einen Beweis so klar wie möglich und so kurz wie möglich
+hinzuschreiben. Im vorausgegangenen Beispiel könnte man zunächst beobachten, dass jede
+Primzahl eine (eindeutige) Primfaktorzerlegung hat. Dann wäre die Induktionsvorausset-
+zung als Spezialfall für n = 2 bereits veriﬁziert, und im Induktionsschritt dürften wir
+sofort voraussetzen, dassn+ 1keine Primzahl ist.
+13. Oktober 2025 161 ↦→4
+ 1 ↦→6
+ 1 ↦→7
+ 1 ↦→8
+Abbildung 1. Jedes Quadrat (schwarze Umrandung) lässt sich in 4, 6,
+7 und 8 (nicht notwendigerweise gleich große) Quadrate unterteilen (blaue
+Unterteilungen). Beispiel 4.9 zeigt mittels vollständiger Induktion, dass sich
+jedes Quadrat deshalb inn≥6 viele (nicht notwendigerweise gleich große)
+Quadrate unterteilen lässt.
+Die Allgemeinheit der Induktion erlaubt auch die Beweisführung für ganz unterschied-
+liche Fragestellungen. Manchmal braucht es auch ein wenig Idee, um die richtige Induk-
+tionsbehauptung zu formulieren.
+Beispiel 4.9. Wir betrachten die folgende Aussage fürn∈N mit n≥6:
+B(n): Jedes Quadrat lässt sich inn(nicht unbedingt gleich große) Quadrate unterteilen.
+Unser Beweis basiert darauf, dass man jedes Quadrat in4 Quadrate zerlegen kann, d.h.
+1 ↦→4 = 1 + 3; siehe Abbildung 1 (links). Um diese Idee in einem Induktionsschritt zu
+nutzen, muss man die AussagenB(6), B(7) und B(8) als Induktionsanfang nehmen. Wir
+betrachten also fürn≥8 die AussageA(n) := B(n−2)∧B(n−1)∧B(n), d.h. wir wollen
+im Folgenden
+∀n∈N,n ≥8 :A(n)
+mittels vollständiger Induktion zeigen.
+Induktionsanfang: Anhand von Abbildung 1 sieht man, dassB(6), B(7) und B(8)
+wahr sind. Also istA(8) wahr. Dies zeigt den Induktionsanfangn= 8.
+Induktionsvoraussetzung: Sei n ∈N mit n ≥8. Die AussageA(n) sei wahr, d.h.
+jedes Quadrat lässt sich inn−2, n−1 und n Quadrate unterteilen.
+Induktionsschritt: Wir müssen zeigen, dassA(n+ 1)wahr ist. Nach Deﬁnition von
+A(n+ 1)ist nur zu zeigen, dassB(n+ 1)wahr ist, d.h. wir können ein Quadrat inn+ 1
+Quadrate unterteilen. Zunächst teilen wir das Quadrat in4 gleich große Quadrate; siehe
+Abbildung 1 (links). Nach Induktionsvoraussetzung istA(n) wahr und damit B(n−2)
+wahr, d.h. wir können eines dieser vier Quadrate inn−2 Quadrate unterteilen. Insgesamt
+haben wir das Ausgangsquadrat in3 + (n−2) =n+ 1Quadrate unterteilt. Damit ist der
+Induktionsschritt gezeigt. Also haben wir abschließend bewiesen, dass sich jedes Quadrat
+in n≥6 Quadrate unterteilen lässt. □
+Das abschließende Beispiel (mit falschem Beweis) zeigt, dass man bei der vollständigen
+Induktion sorgfältig arbeiten muss.
+13. Oktober 2025 17Beispiel 4.10. Wir betrachten die folgende (oﬀensichtlich falsche) Aussage:
+A(n): In jeder Gruppe vonn∈N Pferden haben alle Pferde dieselbe Farbe.
+Wir „beweisen“ diese Aussage mittels vollständiger Induktion nachn.
+Induktionsanfang: Der Induktionsanfangn= 1ist oﬀensichtlich wahr.
+Induktionsvoraussetzung: Sei n∈N. Die AussageA(n) sei wahr.
+Induktionsschritt: Wir müssen zeigen, dassA(n+ 1)gilt. Seien dazuP und Q zwei
+Pferde der Gruppe vonn+1 Pferden. SeiˆP die Gruppe ohneP und ˆQdie Gruppe ohneQ.
+Dann sind ˆP und ˆQ zwei Gruppen mit jeweilsn Pferden. Nach Induktionsvoraussetzung
+haben allen Pferde in ˆP und ˆQ dieselbe Farbe. Also müssen alle Pferde aus der Gruppe
+mit n+ 1Pferden dieselbe Farbe haben. „Damit ist die AussageA(n+ 1)bewiesen.“
+Wo ist der Fehler im Beweis?Im Induktionsschritt nutzen wir implizit, dass es in
+der Gruppe nebenP und Qnoch ein drittes PferdRgibt, sodassP und R(als Pferde der
+Gruppe ˆQ) undQ und R (als Pferde der GruppeˆP) dieselbe Farbe haben. Es muss also
+n ≥3 gelten. Wir haben den Induktionsanfang aber fürn = 1 gezeigt, und die Aussage
+A(n) ist auch oﬀensichtlich falsch fürn= 2.
+Bemerkung 4.11. Abschließend müssen wir noch festhalten, welche (aus der Schul-
+mathematik bekannten) Eigenschaften vonN wir in den letzten Abschnitten verwendet
+haben:
+•Arithmetik (inkl. Kommutativ-, Assoziativ- und Distributivgesetzen),
+•vollständige Kleiner-Größer-Ordnung (inkl. Verträglichkeit mit der Arithmetik),
+•Existenz von minimalen Elementen.
+Formal müssen wir diese Eigenschaften noch veriﬁzieren, wenn wir später die natürlichen
+Zahlen N konstruieren.
+5. Mengen
+Die moderne Mathematik basiert auf dem Begriﬀ der Menge. Auch die Konstruktion
+der üblichen Zahlenmengen (mit ihrer Arithmetik und etwaigen Ordnungsrelationen) wie
+beispielsweise N werden Sie im Zuge derEinführung ins Mathematische Arbeiten(Kon-
+struktion von N) und der Analysis 1 (Konstruktion von Z, Q, R, C) noch sehen. Der
+Einfachheit halber arbeiten wir hier mit dem Mengenbegriﬀ von Georg Cantor.
+Deﬁnition 5.1 (Cantor (1895)).Eine Menge M ist eine ungeordnete Zusammenfas-
+sung von wohlbestimmten und wohlunterschiedenen Objekten zu einer Gesamtheit. Diese
+Objekte heißenElemente von M. Ist M eine Menge und x ein Element von M, so
+schreiben wirx ∈M. Ist M eine Menge undx kein Element vonM, so schreiben wir
+x̸∈M.
+13. Oktober 2025 18Eine Möglichkeit Mengen darzustellen, ist dieaufzählende Schreibweise, z.B.
+M := {a,b,c,d,e } oder M := {1,3,5,... }.
+Ist A(x) eine Aussage über die Elementex einer MengeM, so verwendet man auch eine
+beschreibende Schreibweise, z.B.
+{
+x∈M
+⏐⏐A(x)
+}:=
+{
+x∈M
+⏐⏐A(x) ist wahr
+}:=
+{
+x
+⏐⏐x∈M und A(x) ist wahr
+}
+.
+Aus der Schule kennen Sie die folgenden Zahlenmengen, die wir allerdings später mit dem
+obigen Mengenbegriﬀ gewissermaßen aus dem Nichts heraus noch konstruieren wollen und
+werden:
+•N := {1,2,3,... }natürliche Zahlen (positive ganze Zahlen);
+•N0 := {0,1,2,... }natürliche Zahlen inklusive Null(nicht-negative ganze Zahlen);
+•Z := {0,1,−1,2,−2,... }=
+{
+±n
+⏐⏐n∈N0
+}
+ganze Zahlen;
+•Q :=
+{
+z/n
+⏐⏐z ∈Z,n ∈N
+}
+rationale Zahlen;
+•R reelle Zahlen;
+•C :=
+{
+a+ bi
+⏐⏐a,b ∈R
+}
+komplexe Zahlen.
+Deﬁnition 5.2. Zwei Mengen A und B sind gleich, wenn sie dieselben Elemente
+enthalten. Wir schreiben in diesem Fall A = B mit dem üblichen Symbol = für die
+Gleichheit. Sind zwei Mengen nicht gleich, so schreiben wirA ̸= B. Eine MengeA ist
+eine Teilmengevon B, wenn jedes Element vonAauch ein Element vonBist. In diesem
+Fall bezeichnet manB als Obermenge vonA und schreibt A ⊆B bzw. B ⊇A mit
+den Symbolen⊆und ⊇für dieInklusion. IstA eine Teilmenge vonB und A̸= B, so
+schreiben wirA⫋ B bzw. B ⫌ A mit den Symbolen⫋ und ⫌ für diestrikte Inklusion
+(bzw. echte Inklusion). Schließlich bezeichnet∅:= {} die leere Menge.
+Kommentar. Manche Mathematiker*innen schreibenA ⊊ B anstelle von A ⫋ B. Je
+nach Autor*in wird das SymbolA⊂B als A⊆B oder A⫋ B verstanden.
+Bemerkung 5.3. Für jede MengeA gilt ∅⊆ A mit strikter Inklusion∅⫋ A für A̸= ∅.
+Ferner kann man Mengen von Mengen bilden, z.B. ﬁndet man häuﬁg:Sei K ∈{R,C},
+d.h. K bezeichnet entweder die Menge der reellen oder die Menge der komplexen Zahlen.
+Wenn wir später die natürlichen ZahlenN formal konstruieren, wird es wichtig sein, dass
+klarerweise ∅̸= {∅}̸= {∅,{∅}}gilt.
+Die folgenden Deﬁnitionen werden in Abbildung 2 in Form von sogenanntenVenn-
+Diagrammen visualisiert.
+Deﬁnition 5.4. Für MengenA und B deﬁnieren wir
+•die VereinigungA∪B :=
+{
+x
+⏐⏐(x∈A) ∨(x∈B)
+}
+, sprachlich:A vereinigt B,
+•den Schnitt A∩B :=
+{
+x
+⏐⏐(x∈A) ∧(x∈B)
+}
+, sprachlich:A geschnitten B,
+13. Oktober 2025 19M
+A B
+A∪B
+M
+A B A∩B
+M
+A B A\B
+M
+A Ac
+Abbildung 2. Venn-Diagramme für VereinigungA∪B, Schnitt A∩B
+und DiﬀerenzA\B von MengenA,B ⊆M sowie KomplementAc von Ain
+M.
+•die Diﬀerenz A\B :=
+{
+x
+⏐⏐(x ∈A) ∧(x ̸∈B)
+}
+=
+{
+x ∈A
+⏐⏐x ̸∈B
+}
+, sprachlich:
+A ohne B.
+Ist A⊆M und die MengeM im Kontext klar, so bezeichnet
+•Ac := M\A das Komplement vonA (in M).
+Zwei MengenA und B sind disjunkt, wennA∩B = ∅.
+Beispiel 5.5. Einfache Beispiele für Vereinigung, Schnitt und Diﬀerenz sind
+{1,2,3}∪{2,3,4}= {1,2,3,4}, {1,2,3}∩{2,3,4}= {2,3}, {1,2,3}\{2,3,4}= {1}.
+Sind die natürlichen ZahlenN die Gesamtmenge, so ist
+G:=
+{
+2n
+⏐⏐n∈N
+}:=
+{
+x
+⏐⏐∃n∈N : x= 2n
+}
+= {2,4,6,... }
+die Menge der geraden Zahlen. Das Komplement
+U := Gc = N\G= {1,3,5,... }=
+{
+x
+⏐⏐∃n∈N : x= 2n−1
+}
+=: {
+2n−1
+⏐⏐n∈N
+}
+.
+ist die Menge der ungeraden Zahlen. Gemäß Deﬁnition giltU ∩G= ∅.
+Auf Mengen gelten diverse Rechenregeln wie beispielsweise dieDistributivgesetze. Ge-
+mäß Deﬁnition gilt eine MengengleichheitA = B genau dann, wenn beide Inklusionen
+A ⊆B und A ⊇B gelten. Will man eine Mengengleichheit zeigen, so zeigt man also
+(meistens), dass beide Inklusionen gelten.
+Lemma 5.6. Für beliebige MengenA,B,C gelten
+A∩(B∪C) = (A∩B) ∪(A∩C), (1)
+A∪(B∩C) = (A∪B) ∩(A∪C). (2)
+Beweis. Wir zeigen beide Inklusionen in (1). Die Gleichheit (2) folgt analog.
+Schritt 1 (Inklusion⊆in (1)). Um (1) zu zeigen, sei zunächstx ∈A∩(B∪C)
+beliebig. Nach Deﬁnition des Schnitts gilt(x ∈A) ∧(x ∈B∪C). Nach Deﬁnition der
+13. Oktober 2025 20Vereinigung ist also(x∈B) ∨(x∈C). Daraus ergibt sich also
+(x∈A) ∧(x∈B), d.h.x∈A∩B, oder (x∈A) ∧(x∈C), d.h.x∈A∩C.
+Insgesamt zeigt dies(x ∈A∩B) ∨(x ∈A∩C) und damitx ∈(A∩B) ∪(A∩C). Da
+x beliebig war, erfüllt jedesx∈A∩(B∪C) also x∈(A∩B) ∪(A∩C) und somit gilt
+A∩(B∪C) ⊆(A∩B) ∪(A∩C).
+Schritt 2 (Inklusion⊇in (1)). Die andere Inklusion zeigt man analog. Sei dazu
+x∈(A∩B) ∪(A∩C) beliebig. Nach Deﬁnition der Vereinigung gilt(x∈A∩B) ∨(x∈
+A∩C). Insbesondere gilt also einerseitsx∈A und andererseits
+x∈B oder x∈C, d.h.x∈B∪C.
+Insgesamt zeigt dies (x ∈A) ∧(x ∈B ∪C) und damit x ∈A∩(B ∪C). Jedes x ∈
+(A∩B)∪(A∩C) erfüllt alsox∈A∩(B∪C) und somit(A∩B)∪(A∩C) ⊆A∩(B∪C).
+Schritt3(Gleichheit = in(1)). DadurchSchritt1und2beideInklusionengezeigt
+sind, gilt (1) mit Gleichheit. □
+Kommentar. In Lehrbüchern oder Vorlesungen heißt es oft einfach:„Der Beweis ist
+analog“zu einem anderen Beweis. Das bedeutet, dass Sie, wenn sie den anderen Beweis
+vollständig verstanden haben, in der Lage sein sollten, diesen Beweis selbst zu machen.
+Die Beweisschritte und Argumente sollten also sehr ähnlich sein. Ebenso oft ﬁnden Sie
+auch: „Der Beweis ist oﬀensichtlich“. Oder sogar:„Der Beweis ist trivial“. Das bedeutet,
+dass der Beweis mit Standardargumenten folgt, die bei den Leser*innen vorausgesetzt wer-
+den. Ob ein Beweis wirklich trivial ist oder nicht, liegt sehr im Auge der Betrachter*innen.
+Aber je länger Sie sich mit Mathematik beschäftigen, desto einfacher werden Ihnen die
+Beweise erscheinen, die Ihnen am Anfang des Studiums noch sehr schwer schienen.
+Bisweilen betrachtet man die Vereinigung bzw. den Schnitt von mehr als zwei Mengen.
+Dafür schaﬀen wir die folgende Notation, indem wir die Deﬁnition der Quantoren aus
+Abschnitt 4 vonn∈N auf allgemeinere Mengen und Indizesi∈I übertragen. Beachten
+Sie, dass fürI = {1,2}und MengenA1 und A2 die folgende Deﬁnition 5.7 mit der von
+Deﬁnition 5.4 übereinstimmt, d.h.⋃
+i∈I Ai = A1 ∪A2 bzw. ⋂
+i∈I Ai = A1 ∩A2. Siehe auch
+Abbildung 3 für die Visualisierung in Form von Venn-Diagrammen.
+Deﬁnition 5.7. Es seiI eine Indexmenge, d.h. eine Menge, deren Elemente wir nur
+zum Indizieren anderer Mengen oder Elemente nutzen (z.B.I ⊆N). Für jedesi∈I sei
+eine MengeAi gegeben. Dann deﬁnieren wir
+•die Vereinigung⋃
+i∈I Ai :=
+{
+x
+⏐⏐∃i∈I : x∈Ai
+}
+,
+•den Schnitt ⋂
+i∈I Ai :=
+{
+x
+⏐⏐∀i∈I : x∈Ai
+}
+.
+MitdiesenDeﬁnitionengiltderfolgendeSatz,derdieDistributivgesetzevonLemma5.6
+verallgemeinert und zusätzlich die De Morgan’schen Regeln für Mengen formuliert.
+13. Oktober 2025 21M
+A1 A2
+A3
+⋃
+i∈I Ai
+M
+A1 A2
+A3
+⋂
+i∈I Ai
+Abbildung 3. Venn-Diagramme für Vereinigung⋃
+i∈I Ai = A1 ∪A2 ∪A3
+und Schnitt⋂
+i∈I Ai für I = {1,2,3}und MengenAi ⊆M for i∈I.
+Satz 5.8.Es seiI eine Indexmenge. Für allei∈I sei Bi eine Menge. Sei fernerAeine
+Menge. Dann gelten dieDistributivgesetze
+A∩
+(⋃
+i∈I
+Bi
+)
+=
+⋃
+i∈I
+(A∩Bi), (3)
+A∪
+(⋂
+i∈I
+Bi
+)
+=
+⋂
+i∈I
+(A∪Bi). (4)
+Ferner gelten dieDe Morgan’schen Regeln
+A\
+(⋃
+i∈I
+Bi
+)
+=
+⋂
+i∈I
+(A\Bi), (5)
+A\
+(⋂
+i∈I
+Bi
+)
+=
+⋃
+i∈I
+(A\Bi). (6)
+Beweis. Wir beweisen jeweils beide Inklusionen in (3)–(6).
+Schritt 1 (Inklusion⊆in (3)). Sei x ∈A∩
+(⋃
+i∈I Bi
+)
+. Dann istx ∈A, und es
+gibt einen Indexi0 ∈I mit x∈Bi0 . Also istx∈A∩Bi0 ⊆⋃
+i∈I(A∩Bi). Dax beliebig
+war, folgt die InklusionA∩
+(⋃
+i∈I Bi
+)
+⊆⋃
+i∈I(A∩Bi).
+Schritt 2 (Inklusion⊇in (3)). Sei x ∈⋃
+i∈I(A∩Bi). Dann existiert ein Index
+i0 ∈I mit x ∈A∩Bi0 . Insbesondere gilt x ∈A und x ∈Bi0 ⊆⋃
+i∈I Bi und damit
+x∈A∩
+(⋃
+i∈I Bi
+)
+. Daxbeliebig war, folgt die InklusionA∩
+(⋃
+i∈I Bi
+)
+⊇⋃
+i∈I(A∩Bi).
+Schritt 3 (Inklusion⊆in (4)). Sei x∈A∪
+(⋂
+i∈I Bi
+)
+. Also giltx∈Aoder x∈Bi
+für allei∈I. Insbesondere giltx∈A∪Bi für allei∈I. Daraus folgtx∈⋂
+i∈I(A∪Bi).
+Da x beliebig war, folgt die InklusionA∪
+(⋂
+i∈I Bi
+)
+⊆⋂
+i∈I(A∪Bi).
+13. Oktober 2025 22Schritt 4 (Inklusion⊇in (4)). Sei x ∈⋂
+i∈I(A∪Bi). Also giltx ∈A∪Bi für
+alle i ∈I. Insbesondere gilt alsox ∈A oder x ∈Bi für alle i ∈I. Ist x ∈A, so folgt
+x ∈A∪
+(⋂
+i∈I Bi
+)
+. Ist x ̸∈A, so giltx ∈Bi für alle i ∈I und deshalb x ∈⋂
+i∈I Bi ⊆
+A∪
+(⋂
+i∈I Bi
+)
+. Dax beliebig war, folgt die InklusionA∪
+(⋂
+i∈I Bi
+)
+⊇⋂
+i∈I(A∪Bi).
+Schritt 5 (Inklusion⊆in (5)). Sei x ∈A\
+(⋃
+i∈I Bi
+)
+. Also istx ∈A, aber x ̸∈⋃
+i∈I Bi. Beachte die Äquivalenz
+y∈
+⋃
+i∈I
+Bi ⇐⇒ ∃i∈I : y∈Bi.
+Also gilt mittels Negation des Existenz-Quantors die Äquivalenz
+x̸∈
+⋃
+i∈I
+Bi ⇐⇒ ∀i∈I : x̸∈Bi.
+Insbesondere gilt also x ̸∈Bi für alle i ∈I. Also gilt x ∈A\Bi für alle i ∈I und
+insbesondere x ∈ ⋂
+i∈I(A\Bi). Da x beliebig war, folgt die Inklusion A\
+(⋃
+i∈I Bi
+)
+⊆⋂
+i∈I(A\Bi).
+Schritt 6 (Inklusion⊇in (5)). Sei x ∈⋂
+i∈I(A\Bi). Also istx ∈A\Bi für alle
+i∈I. Insbesondere giltx∈Aund x̸∈Bi für allei∈I. Dies zeigtx∈Aund x̸∈⋃
+i∈I Bi,
+d.h. x∈A\
+(⋃
+i∈I Bi
+)
+. Daxbeliebig war, folgt die InklusionA\
+(⋃
+i∈I Bi
+)
+⊇⋂
+i∈I(A\Bi).
+Schritt 7 (Inklusion⊆in (6)). Sei x ∈A\
+(⋂
+i∈I Bi
+)
+. Also ist x ∈A und x ̸∈⋂
+i∈I Bi. Beachte die Äquivalenz
+y∈
+⋂
+i∈I
+Bi ⇐⇒ ∀i∈I : y∈Bi.
+Also gilt mittels Negation des All-Quantors die Äquivalenz
+x̸∈
+⋂
+i∈I
+Bi ⇐⇒ ∃i0 ∈I : x̸∈Bi0 .
+Wir wählen eini0 ∈I mit x ̸∈Bi0 und damit x ∈A\Bi0 ⊆⋃
+i∈I(A\Bi). Da x beliebig
+war, folgt die InklusionA\
+(⋂
+i∈I Bi
+)
+⊆⋃
+i∈I(A\Bi).
+Schritt 8 (Inklusion⊇in (6)). Sei x∈⋃
+i∈I(A\Bi). Also existiert eini0 ∈I mit
+x ∈A\Bi0 , d.h. es giltx ∈A und x ̸∈Bi0 . Insbesondere folgtx ̸∈⋂
+i∈I Bi und somit
+x∈A\
+(⋂
+i∈I Bi
+)
+. Daxbeliebig war, folgt die InklusionA\
+(⋂
+i∈I Bi
+)
+⊇⋃
+i∈I(A\Bi). □
+Als letzte Deﬁnition in diesem Abschnitt deﬁnieren wir noch die Potenzmenge einer
+Menge.
+Deﬁnition 5.9.Für eine MengeM bezeichnetP(M) :=
+{
+A
+⏐⏐A⊆M
+}
+die Potenzmen-
+ge. Dies ist die Menge aller Teilmengen vonM.
+Beispiel 5.10. Für M := {1,2,3}gilt
+P(M) =
+{
+∅,{1},{2},{3},{1,2},{1,3},{2,3},{1,2,3}},
+13. Oktober 2025 23d.h. M hat 3 Elemente undP(M) hat bereits8 Elemente. Beachte, dass die leere Menge
+∅und die ganze MengeM immer Elemente der Potentzmenge sind.
+Im vorausgegangenen Beispiel haben wir gesehen, dass die 3-elementige MengeM =
+{1,2,3}insgesamt 23 = 8 Teilmengen hat. Dies gilt allgemein, wie wir mit Satz 5.13
+zeigen werden.
+Deﬁnition 5.11. Für n ∈N0 bezeichne n! := ∏n
+j=1 j die Faktorielle, wobei das leere
+Produkt als1 deﬁniert sei, d.h.0! := 1. Fürk∈N0 mit k≤n sei
+(n
+k
+)
+:= n!
+k!(n−k)!
+der Binomialkoeﬃzient , sprachlich:n über k.
+Deﬁnition 5.12. Eine Menge A ist eine endliche Menge, wenn sie entweder leer ist
+oder es einn∈N gibt, sodass wir die Elemente vonAentsprechend nummerieren können:
+A = {x1,...,x n}=
+{
+xi
+⏐⏐i = 1,...,n
+}
+mit paarweise verschiedenen xj ̸= xk für alle
+j,k = 1,...,n . In diesem Fall sagen wir auch, dassA eine n-elementige Menge ist
+und schreiben#A= n für die Kardinalität von A, d.h. dieAnzahl an Elementen.
+Die 0-elementige Menge sei die Menge ohne Elemente, d.h.A= ∅und #∅:= 0.
+Satz 5.13. Seien n,k ∈N0 mit k ≤n. Dann hat jeden-elementige MengeA genau
+(n
+k
+)
+verschiedene k-elementige Teilmengen. Ferner hatA genau 2n verschiedene Teilmengen,
+d.h. 2n = ∑n
+k=0
+(n
+k
+)
+.
+Beweis. Wir beweisen beide Aussagen des Satzes mittels vollständiger Induktion nach
+n∈N0:
+Für jede Menge A mit #A = n ∈ N0 und für alle k = 0,...,n erfüllen die
+Mengen Pk(A) :=
+{
+B ⊆ A
+⏐⏐#B = k
+}
+gerade #Pk(A) =
+(n
+k
+)
+und #P(A) =∑n
+k=0 #Pk(A) = 2n.
+Induktionsanfang. Für n = 0 = k gilt A = ∅und P0(∅) = P(∅) = {∅}mit
+#P0(∅) = #P(∅) = 1 =
+(0
+0
+)
+, d.h. die Aussage ist wahr fürn= 0.
+Induktionsvoraussetzung. Sein∈N unddieAussageseiwahrfüralle n-elementigen
+Mengen.
+Induktionsschritt. Sei A= {x1,...,x n+1}eine (n+ 1)-elementige Menge. Wir un-
+terteilen diek-elementigen TeilmengenB ∈Pk(A) in zwei Gruppen:
+•P−
+k (A) :=
+{
+B ⊆A
+⏐⏐#B = k∧xn+1 ̸∈B
+}
+,
+•P+
+k (A) :=
+{
+B ⊆A
+⏐⏐#B = k∧xn+1 ∈B
+}
+.
+Beachte Pk(A) = P−
+k (A) ∪P+
+k (A) und P−
+k (A) ∩P+
+k (A) = ∅. Daraus folgt #Pk(A) =
+#P−
+k (A) + #P+
+k (A). Wir müssen drei Fälle unterscheiden:
+Fall 1 (k= 0). Für k= 0gilt P−
+0 (A) ={∅}, P+
+0 (A) =∅und #P0(A) = 1 =
+(n+1
+0
+)
+.
+13. Oktober 2025 24Fall 2 (k= n+ 1). Für k = n+ 1gilt #P−
+n+1(A) = ∅and P+
+n+1(A) = {A}, also
+#Pn+1(A) = 1 =
+(n+1
+n+1
+)
+.
+Fall 3 (1 ≤k≤n). Für 1 ≤ k ≤ n beachte zunächst, dass P−
+k (A) = Pk(A′)
+für A′ := {x1,...,x n}. Wir wenden die Induktionsvoraussetzung für A′ an: Es folgt
+#P−
+k (A) = #Pk(A′) =
+(n
+k
+)
+. Beachte ferner, dass sich jedesB ∈P+
+k (A) genau in der Form
+B = {xn+1}∪B′ schreiben lässt mitB′∈Pk−1(A′). Nach Induktionsvoraussetzung folgt
+also #P+
+k (A) = #Pk−1(A′) =
+( n
+k−1
+)
+. Für1 ≤k≤n ergibt sich insgesamt
+#Pk(A) =
+(n
+k
+)
++
+( n
+k−1
+)
+= n!
+k!(n−k)! + n!
+(k−1)!(n−k+ 1)!
+= n! (n+ 1−k)
+k!(n+ 1−k)! + n! k
+k!(n+ 1−k)!
+= n! (n+ 1)
+k!(n+ 1−k)! =
+(n+ 1
+k
+)
+.
+(7)
+Damit ist#Pk(A) =
+(n+1
+k
+)
+für allek= 0,...,n + 1gezeigt.
+Abschließendmüssenwirnoch#P(A) berechnen.DabeiverwendenwirdieIdentität(7)
+für den Binomialkoeﬃzienten (und einen Index-Shift in der Summe beim
+!
+=) und erhalten
+#P(A) =
+n+1∑
+k=0
+#Pk(A) =
+n+1∑
+k=0
+(n+ 1
+k
+)
+=
+(n+ 1
+0
+)
++
+(n+ 1
+n+ 1
+)
++
+n∑
+k=1
+(n+ 1
+k
+)
+(7)
+= 1 + 1 +
+n∑
+k=1
+[(n
+k
+)
++
+( n
+k−1
+)]
+=
+(n
+0
+)
++
+(n
+n
+)
++
+n∑
+k=1
+(n
+k
+)
++
+n∑
+k=1
+( n
+k−1
+)
+!
+=
+(n
+0
+)
++
+(n
+n
+)
++
+n∑
+k=1
+(n
+k
+)
++
+n−1∑
+k=0
+(n
+k
+)
+= 2
+n∑
+k=0
+(n
+k
+)
+.
+Mit der Induktionsvoraussetzung folgt somit
+#P(A) = 2
+n∑
+k=0
+(n
+k
+)
+= 2·#P(A′) = 2·2n = 2n+1.
+DamitistderInduktionsschrittgezeigtunddieAussagedesSatzesgiltfüralle n∈N0. □
+Wir beschließen den Abschnitt mit der Beobachtung, dass der Cantor’sche Begriﬀ von
+Menge und Element formal nicht hinreichend präzise ist, da er innere Widersprüche ent-
+hält.
+Bemerkung 5.14 (Russell’sche Antonomie (1903)).Formal ist die Cantorsche De-
+ﬁnition einer Menge noch „zu naiv“, wie dieRusselsche Antonomiezeigt:
+Es sei M die Menge aller Mengen, die sich nicht selbst als Element ent-
+halten.
+13. Oktober 2025 25x1
+x2
+x3
+A y1 y2 y3 B
+(x1, y1) (x1, y2) (x1, y3)
+(x2, y1) (x2, y2) (x2, y3)
+(x3, y1) (x3, y2) (x3, y3)
+A × B
+Abbildung 4. Visualisierung des kartesischen ProduktsA×B aus Deﬁ-
+nition 6.1 für zwei MengenA= {x1,x2,x3}und B = {y1,y2,y3}.
+Diese „Deﬁnition“ vonM erzeugt einen Widerspruch mit der folgenden Frage:
+Gilt M ∈M?
+Wenn M ∈M, dann folgt nach Deﬁnition vonM, dass M ̸∈M. WennM ̸∈M, dann
+folgt nach Deﬁnition vonM, dass M ∈M. Dieser inhärente Widerspruch der Cantor-
+Deﬁnition kann durch die axiomatische Mengenlehre ausgeschlossen werden, da diese die
+Deﬁnition der Russell-Menge nicht erlaubt.
+6. Kartesisches Produkt und (Äquivalenz-) Relationen
+Nach Deﬁnition einer Menge spielt die Reihenfolge bei der aufzählenden Schreibweise
+keine Rolle, d.h.
+{1,2}= {2,1}.
+Das ist der zentrale Unterschied zu(geordneten) Paaren, für die wir die runden Klam-
+mern verwenden und bei denen eben diese Reihenfolge zusätzlich beachtet wird, d.h.
+(1,2) ̸= (2,1).
+Deﬁnition6.1. Für MengenAund Bdeﬁnieren wir daskartesische ProduktA×B :={
+(x,y)
+⏐⏐(x ∈A) ∧(y ∈B)
+}
+(sprachlich auch: dieProduktmengeoder A Kreuz B).
+Ein Element vonA×B bezeichnen wir als(geordnetes) Paar(x,y) ∈A×B.
+Deﬁnition 6.2. Seien A und B Mengen. Eine TeilmengeR ⊆A×B heißtRelation
+(zwischen A und B). FürA= B bezeichnet manR auch alsRelation (inA). Für
+eine RelationR und a∈A und b∈B verwendet man oft die SchreibweiseaRb anstelle
+von (a,b) ∈R und a̸Rb anstelle von(a,b) ̸∈R.
+13. Oktober 2025 26Beispiel 6.3. Erste Beispiele für Relationen auf N, die sie schon kennen, sind die
+Gleichheit =, die Ordnungsrelation< und die Teilerrelation|:
+• = :=
+{
+(x,y) ∈N ×N
+⏐⏐x= y
+}
+(Gleichheitsrelation)
+• < :=
+{
+(x,y) ∈N ×N
+⏐⏐x<y
+}
+(Ordnungsrelation)
+• | :=
+{
+(t,x) ∈N ×N
+⏐⏐∃x′∈N : x= tx′}
+(Teilerrelation:t ist Teiler vonx)
+Aus diesen Beispielen erklären sich auch die Schreibweisenx = y (anstelle von (x,y) ∈
+=), x<y (anstelle von(x,y) ∈<) undt|x (anstelle von(t,x) ∈|) für diese Relationen.
+Deﬁnition 6.4. Sei A eine Menge und∼eine Relation inA. Die Relation∼heißt
+(a) reﬂexiv, wenn gilt ∀x∈A: x∼x;
+(b) symmetrisch, wenn gilt ∀x,y ∈A: [x∼y⇒y∼x];
+(c) transitiv, wenn gilt ∀x,y,z ∈A: [(x∼y∧y∼z) ⇒x∼z].
+Die Relation∼heißtÄquivalenzrelation (aufA), wenn∼reﬂexiv, symmetrisch und
+transitiv ist.
+Beispiel 6.5. Äquivalenzrelationen treten im mathematischen Alltag sehr häuﬁg auf:
+•Das einfachste mathematische Beispiel für eine Äquivalenzrelation ist die Gleich-
+heit = auf N.
+•Wenn wir die Menge der rationalen ZahlenQ =
+{
+z/n
+⏐⏐z ∈Z,n ∈N
+}
+betrachten,
+so verwenden wir bei dieser Deﬁnition implizit durchs Kürzen eine Äquivalenzre-
+lation auf Z ×N: Wir identiﬁzieren beispielsweise die Brüche1
+3 = 2
+6 = 3
+9 = ... ,
+weil diese im Sinne der Schulmathematik alle denselben Zahlenwert bezeichnen.
+•Eine Äquivalenzrelation unseres Alltag ist, wenn wir sagen, dass zwei Menschen
+in Relation stehen, wenn sie im selben Jahr geboren sind.
+Beispiel 6.6.Aber auch andere Relationen, die keine Äquivalenzrelation sind, treten oft
+im mathematischen Alltag auf:
+•Die Ungleichheit̸= auf N ist symmetrisch, aber weder reﬂexiv noch transitiv.
+•Die Kleiner-Ordnung<auf N ist transitiv, aber weder reﬂexiv noch symmetrisch.
+•Die Mengen-Inklusion⊆ist reﬂexiv und transitiv, aber nicht symmetrisch.
+Der folgende (einfache) Satz soll nur das erste Arbeiten mit Äquivalenzrelationen illus-
+trieren: EntsprichtR1 der Äquivalenzrelation, dass zwei Personen im selben Jahr geboren
+sind, und R2 der Äquivalenzrelation, dass zwei Personen gleich groß sind, so entspricht
+Raus dem folgenden Satz gerade der Äquivalenzrelation, dass zwei Personen im gleichen
+Jahr geboren sind und gleich groß sind.
+13. Oktober 2025 27Satz 6.7. Es seienR1,R2 Äquivalenzrelationen auf einer MengeA. Dann ist auchR:=
+R1 ∩R2 eine Äquivalenzrelation aufA.
+Beweis. Jede Eigenschaft einer Äquivalenzrelation wird in einem der folgenden drei Be-
+weisschritte gezeigt.
+Schritt 1 (R1,R2 reﬂexiv⇒Rreﬂexiv). Sei x∈A. Aufgrund der Eigenschaften
+von R1 und R2 gelten (x,x) ∈R1 und (x,x) ∈R2, also auch(x,x) ∈R1 ∩R2 = R. In
+üblicher Notation gilt damitxRx , d.h.R ist reﬂexiv.
+Schritt 2 (R1,R2 symmetrisch ⇒R symmetrisch). Seien x,y ∈A mit xRy .
+Es ist yRx zu zeigen. Es gilt(x,y) ∈R = R1 ∩R2. Aufgrund der Eigenschaften von
+R1 und R2 folgt daraus(y,x) ∈R1 ∩R2 = R. In üblicher Notation schreibt sich dies als
+yRx , d.h.R ist symmetrisch.
+Schritt 3 (R1,R2 transitiv⇒Rtransitiv). Seienx,y,z ∈AmitxRy undyRz .
+Es istxRz zu zeigen. Es gilt(x,y),(y,z) ∈R = R1 ∩R2. Aufgrund der Eigenschaften
+von R1 und R2 folgt daraus (x,z) ∈R1 ∩R2 = R. In anderer Notation gilt alsoxRz ,
+d.h. R ist transitiv. □
+Wenn wir mittels einer Äquivalenzrelation Objekte einteilen (z.B. die Menschen nach
+Geburtsjahr), so partitionieren wir die Gesamtmenge (alle Menschen) in gewisse disjunkte
+Teilmengen (alle Menschen eines Geburtsjahres). Dieses Vorgehen wird im Folgenden
+formalisiert.
+Deﬁnition 6.8.Sei A eine Menge und∼eine Äquivalenzrelation aufA. Für allex∈A
+deﬁnieren wir dieÄquivalenzklasse vonx bezüglich ∼als
+[x]∼ :=
+{
+y∈A
+⏐⏐x∼y
+}
+⊆A.
+Die Menge dieser Äquivalenzklassen
+A/∼:=
+{
+[x]∼
+⏐⏐x∈A
+}
+⊆P(A)
+bezeichnet man alsFaktormenge vonA nach ∼.
+Lemma 6.9.Sei A̸= ∅eine Menge und∼eine Äquivalenzrelation aufA. Seienx,y ∈A.
+Dann gelten die folgenden Aussagen:
+(i) x∈[x]≁= ∅.
+(ii) x∼y ⇐⇒[x]∼= [y]∼
+(iii) x̸∼y ⇐⇒[x]∼∩[y]∼= ∅.
+Beweis. Wir unterteilen den Beweis in sechs Schritte.
+Schritt 1 (x∈[x]∼). Sei x∈A. Aufgrund der Reﬂexivitätx∼xgilt x∈[x]∼ und
+insbesondere [x]≁= ∅. Das zeigt (i).
+13. Oktober 2025 28A
+x1
+x2
+x3
+x4
+x5
+x6
+x7
+x8
+x9
+Q⊂P (A)
+x1
+x2
+x3
+x4
+x5
+x6
+x7
+x8
+x9
+Abbildung 5. Visualisierung einer PartitionQ= {Q1,Q2,Q3}von einer
+Menge A= {x1,x2,x3,...,x 9}gemäß Deﬁnition 6.10.
+Schritt 2 (x∼y⇒[x]∼ ⊆[y]∼). Seien x,y ∈A mit x ∼y. Aufgrund der Sym-
+metrie folgt dann auchy∼x. Seiz ∈[x]∼, d.h. es giltx∼z. Aufgrund der Transitivität
+folgt ausy∼xund x∼z auch y∼z und damitz ∈[y]∼. Daz ∈[x]∼beliebig war, folgt
+die Inklusion[x]∼⊆[y]∼.
+Schritt 3 (x∼y⇒[x]∼ ⊇[y]∼). Seien x,y ∈A mit x ∼y. Aufgrund der Sym-
+metrie folgt dann auchy∼x und Schritt 2 zeigt[y]∼⊆[x]∼.
+Schritt 4 ([x]∼ ∩[y]∼ ̸= ∅⇒ x∼y). Seien x,y ∈A mit [x]∼∩[y]∼ ̸= ∅. Dann
+existiert z ∈[x]∼∩[y]∼, d.h. es giltz ∈Amit x∼z und y∼z. Aufgrund der Symmetrie
+gilt auchx∼z und z ∼y. Mit der Transitivität folgtx∼y und damit auch[x]∼= [y]∼
+nach Schritt 2–3.
+Schritt 5 (x∼y⇔[x]∼ = [y]∼). Die Kombination von Schritt 2–3 zeigt die Im-
+plikation ⇒. Für die Implikation⇐beachte, dass [x]∼ = [y]∼ ̸= ∅nach Schritt 1 und
+Schritt 4 bereitsx∼y implizieren. Die zeigt (ii).
+Schritt 6 (x̸∼y⇔[x]∼ ̸= [y]∼). Die Äquivalenz folgt direkt durch Negation bei-
+der Seiten aus der Äquivalenz in Schritt 5.
+Schritt 7 (x̸∼y⇔[x]∼ ∩[y]∼ = ∅). Die Implikation⇒ist die Kontraposition
+vonSchritt4ist.UmdieandereImplikation ⇐zusehen,seien x,y ∈Amit[x]∼∩[y]∼= ∅.
+Aus Schritt 1 folgtx∈[x]≁= ∅und deshalb[x]≁= [y]∼. Aus Schritt 6 folgtx̸∼y. Dies
+zeigt (iii). □
+Deﬁnition 6.10. Sei A eine Menge. Eine TeilmengeQ⊆P (A) heißtPartition (von
+A), wenn die folgenden drei Eigenschaften gelten:
+(a) alle TeilmengenQ∈Q sind nichtleer, d.h. es gilt
+∀Q∈Q : Q̸= ∅;
+(b) die TeilmengenQ∈Q sind paarweise disjunkt, d.h. es gilt
+∀Q1,Q2 ∈Q : [Q1 ̸= Q2 ⇒Q1 ∩Q2 = ∅];
+(c) jedes Element vonA ist in einer Menge ausQenthalten, d.h.A= ⋃
+Q∈QQ bzw.
+∀x∈A∃Q∈Q : x∈Q.
+13. Oktober 2025 29Der folgende Satz zeigt, dass jede Äquivalenzrelation eine Partition induziert und dass
+jede Partition eine Äquivalenzrelation deﬁniert. Beide Konzepte sind also gewissermaßen
+äquivalent.
+Satz 6.11. Für jede MengeA̸= ∅gelten die folgenden beiden Aussagen:
+(i) Ist ∼eine Äquivalenzrelation auf A, so ist die Faktormenge Q := A/∼eine
+Partition vonA.
+(ii) Ist Qeine Partition vonA, so deﬁniertR :=
+{
+(x,y)
+⏐⏐∃Q ∈Q : x,y ∈Q
+}
+eine
+Äquivalenzrelation aufA.
+Beweis. Schritt1( Qvon(i)erfülltDeﬁnition6.10). NachLemma6.9gilt x∈[x]∼
+für jedes x ∈A und damit [x]∼ ̸= ∅für alle x ∈A. Dies zeigt Deﬁnition 6.10(a) und
+(c). ZuQ1,Q2 ∈Q existieren x,y ∈A mit Q1 = [x]∼ und Q2 = [y]∼. Im FallQ1 ̸= Q2
+muss nach Lemma 6.9 dannx ̸∼y und damit sogar Q1 ∩Q2 = ∅gelten. Dies zeigt
+Deﬁnition 6.10(b).
+Schritt 2 (Rvon (ii) erfüllt Deﬁnition 6.8(a)).Sei x∈A. DaQeine Partition
+von A ist, existiert einQ∈Q mit x∈Q. Es folgt(x,x) ∈R nach Deﬁnition vonR. In
+üblicher Notation folgtxRx , d.h.R ist reﬂexiv.
+Schritt 3 (R von (ii) erfüllt Deﬁnition 6.8(b)). Seien x,y ∈A mit xRy , d.h.
+(x,y) ∈R. Nach Deﬁnition vonR existiert ein Q ∈ Qmit x,y ∈Q. Also gilt auch
+(y,x) ∈R. In üblicher Notation folgtyRx , d.h.R ist symmetrisch.
+Schritt 4 (R von (ii) erfüllt Deﬁnition 6.8(c)).Seien x,y,z ∈A mit xRy und
+yRz , d.h. (x,y),(y,z) ∈R. Nach Deﬁnition existierenQ1,Q2 ∈Q mit x,y ∈Q1 und
+y,z ∈Q2. Insbesondere gilty∈Q1 ∩Q2 ̸= ∅. DaQeine Partition vonAist, folgtQ1 = Q2
+und damitx,z ∈Q1. Also gilt auch(x,z) ∈R. In üblicher Notation folgtxRz , d.h.R
+ist transitiv. □
+7. Funktionen
+Aus der Schule kennen Sie bereits einen naiven Funktionsbegriﬀ fürf: X →Y. Dieser
+wird durch die folgende Deﬁnition formalisiert.
+Deﬁnition 7.1. Seien X und Y Mengen. Eine Relationf ⊆X ×Y heißtFunktion,
+wenn Sie die folgenden beiden Eigenschaften besitzt:
+(a) ∀x∈X∃y∈Y : (x,y) ∈f, ( f ist überall deﬁniert)
+(b) ∀x∈X∀y1,y2 ∈Y :
+[
+(x,y1),(x,y2) ∈f ⇒y1 = y2
+]
+. ( f ist wohldeﬁniert)
+Die Menge X heißtDeﬁnitionsmenge von f, die Menge Y heißtZielmenge oder
+Wertevorrat von f. Ist f eine Funktion, so schreiben wir auchf: X →Y als Ab-
+bildungsvorschrift. Ferner schreiben wiry= f(x) anstelle von (x,y) ∈f. Manchmal
+13. Oktober 2025 30bezeichnet man in diesem Kontext die Mengef =
+{
+(x,y)
+⏐⏐x∈X∧y = f(x)
+}
+⊆X×Y
+auch alsGraph vonf.
+Kommentar. Manchmal werden die Eigenschaften in Deﬁnition 7.1(a)–(b) als Wohlde-
+ﬁniertheit bezeichnet und in der Form
+∀x∈X∃! y∈Y : (x,y) ∈f
+abgekürzt (mit dem Quantor∃! für die eindeutige Existenz): Jedemx ist ein eindeutiger
+Funktionswert f(x) zugeordnet. Explizite Quintessenz: Um eine eindeutige Existenz zu
+zeigen, muss man stets(a) die Existenz zeigen und(b) die Eindeutigkeit.
+Deﬁnition 7.2. Seien X und Y Mengen und f,g : X →Y Funktionen. Wir schreiben
+f = g, wennf(x) =g(x) für alle x∈X gilt.
+Deﬁnition 7.3. Seien X, Y, Z Mengen und f: X →Y und g: Y →Z Funktionen.
+Dann deﬁniert(g◦f)(x) := g
+(
+f(x)) eine Funktiong◦f: X →Z. Man bezeichnetg◦f
+als Hintereinanderausführungoder Komposition vonf und g.
+Lemma 7.4 (Assoziativität der Komposition).Für MengenW, X, Y, Z und Funk-
+tionen f: W →X, g: X →Y und h: Y →Z gilt h◦g◦f := (h◦g) ◦f = h◦(g◦f),
+sodass man die Klammern weglassen darf.
+Beweis. Für x∈W gilt
+((h◦g) ◦f)(x) = (h◦g)(f(x)) =h(g(f(x)) =h((g◦f)(x)) = (h◦(g◦f))(x).
+Also gilt Gleichheit(h◦g) ◦f = h◦(g◦f) der Funktionen. □
+Deﬁnition 7.5. Seien X, Y Mengen mit Teilmengen A ⊆X und B ⊆Y. Für eine
+Funktion f: X →Y deﬁnieren wir das
+(a) Bild vonAunter f als f(A):=
+{
+f(x)
+⏐⏐x∈A
+}:=
+{
+y∈Y
+⏐⏐∃x∈A: y= f(x)
+}
+,
+(b) Urbild vonB unter f als f−1(B) :=
+{
+x∈X
+⏐⏐f(x) ∈B
+}
+.
+Die Mengef(X) bezeichnet man alsBild oder Wertebereich vonf.
+Beispiel 7.6.Wir betrachten die Funktionf: Z →Z, f(x) := x2. FürA:= {1,−2,2,3}
+gilt dannB := f(A) ={1,4,9}und f−1(B) ={−1,1,−2,2,−3,3}.
+Die folgende Deﬁnition wird in Abbildung 6 visualisiert. Von besonderer Bedeutung
+sind bijektive Funktionenf: X →Y, da für diese eine Inverse existiert, wie wir später
+in Satz 7.11 sehen werden.
+Deﬁnition 7.7. Seien X und Y Mengen. Eine Funktionf: X →Y heißt
+(a) Surjektion oder surjektiv, wennf(X) =Y gilt, d.h.
+∀y∈Y ∃x∈X : y= f(x);
+13. Oktober 2025 31X Y
+surjektiv
+X Y injektiv
+X Y bijektiv
+Abbildung 6. Visualisierungen von surjektiven, injektiven und bijektiven
+Funktionen f: X →Y.
+(b) Injektion oder injektiv, wenn gilt
+∀x1,x2 ∈X :
+[
+f(x1) =f(x2) ⇒x1 = x2
+]
+oder (äquivalent dazu)
+∀x1,x2 ∈X :
+[
+x1 ̸= x2 ⇒f(x1) ̸= f(x2)
+]
+.
+(c) Bijektion oder bijektiv, wenn sie injektiv und surjektiv ist, d.h.
+∀y∈Y ∃! x∈X : y= f(x).
+Beispiel 7.8. (i) Es sei M die Menge aller Personen in Österreich. Jede Person
+in Österreich hat eine eindeutige Sozialversicherungsnummer, d.h. die zugehörige
+Funktion s: M →N ist injektiv, aber nicht surjektiv.
+(ii) Es seiM die Menge aller Personen in Österreich. Die Funktiong: M →N, die
+jeder Person deren (gerundete) Größe in Zentimeter zuordnet, ist weder injektiv
+noch surjektiv.
+(iii) Die Funktionq: N →N, die jeder Zahl ihre Quersumme zuweist (d.h.q(a) =a1 +
+a2 + a3 + ···+ an, wenna∈N mittels Ziﬀernaj ∈{0,..., 9}als a= a1a2a3 ...a n
+dargestellt ist) ist surjektiv, aber nicht injektiv.
+Bemerkung 7.9. Es seienX und Y Mengen undf: X →Y.
+(i) Man kannf auch als Funktionf: X →f(X) auﬀassen. Durch diese Modiﬁkation
+erhält man eine surjektive Funktion.
+(ii) Ist f: X →Y injektiv, dann istf: X →f(X) bijektiv.
+Eine wichtige bijektive Funktion ist die Identität.
+Deﬁnition7.10. Für jede MengeX bezeichnetIdX : X →X, IdX(x) := xdie Identität
+auf X.
+13. Oktober 2025 32Satz 7.11 (Existenz und Eindeutigkeit der Inversen).Seien X, Y Mengen und
+f: X →Y eine Funktion. Dann sind die folgenden beiden Aussagen äquivalent:
+(i) f ist bijektiv
+(ii) Es gibt eine Funktiong: Y →X mit f ◦g= IdY und g◦f = IdX.
+In diesem Fall istf−1 := g eindeutig und wird alsInverse vonf bezeichnet.
+Beweis. Wir teilen den Beweis in sieben Schritte.
+Schritt 1 (Deﬁnition vonf−1). Laut Deﬁnition giltf =
+{
+(x,y)
+⏐⏐x ∈X ∧y =
+f(x)
+}
+. Wir deﬁnieren die Relation
+f−1 :=
+{
+(y,x)
+⏐⏐(x,y) ∈f
+}
+.
+Es ist zu diesem Zeitpunkt noch nicht klar, dassf−1 eine Funktion ist.
+Schritt 2 (f surjektiv ⇒f−1 überall deﬁniert). Sei f surjektiv. Wir müssen
+zeigen, dass gilt
+∀y∈Y∃x∈X : (y,x) ∈f−1.
+Sei y∈Y. Daf surjektiv, existiert einx∈X mit f(x) =y, d.h.(x,y) ∈f. Insbesondere
+folgt (y,x) ∈f−1.
+Schritt 3 (f injektiv ⇒f−1 wohldeﬁniert). Sei f injektiv. Wir müssen zeigen,
+dass gilt
+∀y∈Y∀x1,x2 ∈X :
+[
+(y,x1),(y,x2) ∈f−1 ⇒x1 = x2
+]
+.
+Seien y∈Y und x1,x2 ∈X mit (y,x1),(y,x2) ∈f−1. Dann folgt(x1,y),(x2,y) ∈f, d.h.
+f(x1) =y= f(x2). Daf injektiv ist, folgtx1 = x2.
+Schritt 4 (f bijektiv ⇒f−1 ◦f = IdX, f◦f−1 = IdY ). Sei f bijektiv. Nach
+Schritt 1–3 istf−1 : Y →X eine Funktion. Für die erste Identität müssen wir zeigen,
+dass gilt
+∀x∈X : f−1(f(x)) =x.
+Sei x ∈X und y := f(x), d.h. (x,y) ∈f. Dann folgt (y,x) ∈f−1, d.h. f−1(y) = x.
+Insbesondere folgt f−1(f(x)) = f−1(y) = x. Die andere Gleichheit folgt analog. Mit
+Schritt 1–4 ist die Implikation (i)⇒(ii) gezeigt.
+Schritt 5 (f◦g= IdY ⇒f surjektiv). Es geltef◦g= IdY , d.h.f(g(y)) =y für
+alle y∈Y. Wir müssen zeigen, dass gilt
+∀y∈Y∃x∈X : f(x) =y.
+Sei y∈Y. Dann gilty= f(g(y)). Deﬁnieren wirx:= g(y), so folgtf(x) =y.
+13. Oktober 2025 33Schritt 6 (g◦f = IdX ⇒f injektiv). Es gelteg◦f = IdX, d.h.g(f(x)) =xfür
+alle x∈X. Wir müssen zeigen, dass gilt
+∀x1,x2 ∈X :
+[
+f(x1) =f(x2) ⇒x1 = x2
+]
+.
+Seien x1,x2 ∈X mit f(x1) = f(x2). Dann folgt x1 = g(f(x1)) = g(f(x2)) = x2. Mit
+Schritt 5–6 ist die Implikation (ii)⇒(i) gezeigt.
+Schritt 7 (f−1 eindeutig). Sei g: Y →X eine Funktion mit f ◦g = IdY und
+g◦f = IdX. Nach Schritt 5–6 istf bijektiv. Nach Schritt 1–3 existiert also die Inverse
+f−1 : Y →X. Mit Schritt 4 folgt dann
+g= IdX ◦g= (f−1 ◦f) ◦g= f−1 ◦(f ◦g) =f−1 ◦IdY = f−1.
+Dies beschließt den Beweis. □
+Bemerkung 7.12. Beachten Sie, dass fürf: X →Y die Notationf−1 doppelt verwen-
+det wird: Für das Urbild aus Deﬁnition 7.5 und, sofernf bijektiv ist, für die Inverse
+aus Satz 7.11. Tatsächlich besteht keine Verwechslungsgefahr: Das Urbildf−1(B) ist für
+Mengen B ∈Y deﬁniert. Die Inverse f−1(y) agiert auf Elementen y ∈Y und ist nur
+deﬁniert, wennf bijektiv ist. In diesem Fall giltf−1({y}) ={x}für x= f−1(y).
+Korollar 7.13. Seien X, Y, Z Mengen undf: X →Y und g: Y →Z bijektive Funk-
+tionen. Dann gelten die folgenden Aussagen:
+(i) f−1 bijektiv mit(f−1)−1 = f.
+(ii) g◦f ist bijektiv mit(g◦f)−1 = f−1 ◦g−1.
+Beweis. (i) Wir wenden Satz 7.11(ii) aufF := f−1 und G := f an. Es giltF ◦G = IdX
+und G◦F = IdY . Also istF bijektiv mit(f−1)−1 = F−1 = G= f
+(ii) Wir wenden Satz 7.11(ii) aufF := g◦f und G:= f−1 ◦g−1 an. Die Assoziativität
+der Komposition zeigt
+F ◦G= (g◦f) ◦(f−1 ◦g−1) =g◦IdY ◦g−1 = g◦g−1 = IdZ
+und analogG◦F = IdX. Also istF bijektiv mit(g◦f)−1 = F−1 = G= f−1 ◦g−1. □
+Deﬁnition 7.14. Seien X und Y Mengen und M ⊆X. Ist f: X →Y eine Funktion,
+so bezeichnet man die Funktion f|M :=
+{
+(x,y) ∈ f
+⏐⏐x ∈ M
+}
+als Restriktion oder
+Einschränkung vonf auf M, d.h.f|M : M →Y und f|M (x) =f(x) für allex∈M.
+Ist f: M →Y eine Funktion, so bezeichnet man eine FunktionF: X →Y mit F|M = f
+als Fortsetzung vonf auf X.
+Der folgende Satz ist auch als Schubfachprinzip bekannt:Wir haben m Paar Socken
+und n Schubladen. Wennm>n ist, dann muss in mindestens einer Schublade mehr als
+13. Oktober 2025 34ein paar Socken liegen (d.h. die Zuordnung ist nicht injektiv). Wennm < nist, dann
+bleibt mindestens eine Schublade leer (d.h. die Zuordnung ist nicht surjektiv).
+Satz7.15(Schubfachprinzip). Seien m,n ∈N und f: {1,...,m }→{ 1,...,n }. Dann
+gelten die folgenden Aussagen:
+(i) Ist f injektiv, so folgtm≤n.
+(ii) Ist f surjektiv, so folgtm≥n.
+(iii) Ist f bijektiv, so folgtm= n.
+Insbesondere kannf nicht bijektiv sein fürm̸= n.
+Beweis von Satz 7.15(i). Der Beweis erfolgt in drei Schritten. Zur Abkürzung der No-
+tation deﬁnieren wirMn := {1,...,n }für allen∈N.
+Schritt 1 (f: Mn+1 →Mn ist nicht injektiv). Wir beweisen mittels vollständi-
+ger Induktion nachn, dass jede Funktionf : Mn+1 →Mn nicht injektiv ist (d.h. kein
+solches f ist injektiv).
+Induktionsbehauptung A(n): ∀f: Mn+1 →Mn : f nicht injektiv.
+Induktionsanfang n= 1. Für jedesf: {1,2}→{ 1}gilt f(1) = 1 =f(2), d.h.f
+ist nicht injektiv.
+Induktionsvoraussetzung. Sei n∈N. Es gelteA(n), d.h.
+∀g: Mn+1 →Mn : g nicht injektiv.
+Induktionsschritt. Wir müssen zeigen, dassA(n+ 1) gilt. Wir machen einen in-
+direkten Beweis und nehmen an, dassA(n+ 1)falsch ist. Dann existiert eine injektive
+Funktion f: Mn+2 →Mn+1. AufMn+1 betrachten wir füra,b ∈Mn+1 die Funktion
+σa,b : Mn+1 →Mn+1, σ a,b(x) :=
+
+
+
+x für x̸∈{a,b},
+a für x= b,
+b für x= a.
+Dann istσa,b wohldeﬁniert und bijektiv, denn es giltσa,b ◦σa,b = IdMn+1 . Also ist
+g:= σn+1,f(n+2) ◦f: Mn+2 →Mn+1
+injektiv als Komposition einer Bijektion und einer Injektion. Es gilt
+g(n+ 2) =σn+1,f(n+2)(f(n+ 2)) =n+ 1.
+Da g injektiv ist, folgt für allex∈Mn+2\{n+ 2}= Mn+1, dassg(x) ∈Mn+1\{n+ 1}=
+Mn. Also istg(Mn+1) ⊆Mn, d.h. g|Mn+1 : Mn+1 →Mn ist injektiv. Dies steht aber im
+Widerspruch zur Induktionsvoraussetzung. Also ist die Annahme falsch und Schritt 1
+damit bewiesen.
+13. Oktober 2025 35Schritt2( m>n =⇒f: Mm →Mn nichtinjektiv). Seien m>n undf: Mm →
+Mn. Nach Schritt 1 ist die Restriktionf|Mn+1 : Mn+1 →Mn nicht injektiv. Also ist auch
+f: Mm →Mn nicht injektiv.
+Schritt 3. Die Kontraposition von Schritt 2 zeigt, dass Injektivität vonf: Mm →Mn
+impliziert, dassm≤n. □
+Beweis von Satz 7.15(ii). Der Beweis erfolgt wieder in drei Schritten und mit dersel-
+ben Notation und demselben Vorgehen wie zuvor.
+Schritt 1 (f: Mn →Mn+1 ist nicht surjektiv). Wir beweisen mittels Induktion
+nach n, dass jede Funktionf : Mn →Mn+1 nicht surjektiv ist, d.h.
+Induktionsbehauptung A(n): ∀f: Mn+1 →Mn : f nicht surjektiv.
+Induktionsanfang n= 1. Für jedesf: {1}→{ 1,2}gilt oﬀensichtlich, dassf nicht
+surjektiv ist, denn entweder giltf(1) = 1oder f(1) = 2.
+Induktionsvoraussetzung. Sei n∈N. Es gelteA(n), d.h.
+∀g: Mn+1 →Mn : g nicht surjektiv.
+Induktionsschritt. Wir müssen zeigen, dassA(n+ 1) gilt. Wir machen einen in-
+direkten Beweis und nehmen an, dassA(n+ 1) falsch ist. Dann existiert eine surjek-
+tive Funktion f: Mn+1 →Mn+2. Dann existiert eink ∈Mn+1 mit f(k) = n+ 2. Da
+σk,n+1 : Mn+1 →Mn+1 bijektiv ist, ist
+g:= f ◦σk,n+1 : Mn+1 →Mn+2
+surjektiv und es giltg(n+ 1) =f(σk,n+1(n+ 1)) =f(k) = n+ 2. Insbesondere folgt
+g(Mn) ⊇Mn+1. Wir deﬁnieren die modiﬁzierte Funktion
+˜g: Mn →Mn+1, ˜g(x) :=
+
+
+
+g(x), falls g(x) ∈Mn+1,
+n+ 1, sonst.
+Da wir die Funktiong nur dort modiﬁzieren, wog(x) ̸∈Mn+1 gilt, folgt ausg(Mn) ⊇
+Mn+1, dass ˜g(Mn) = Mn+1. Also ist˜g: Mn →Mn+1 surjektiv. Dies steht aber im Wi-
+derspruch zur Induktionsvoraussetzung. Also ist die Annahme falsch und Schritt 1 damit
+bewiesen.
+Schritt 2 (m<n =⇒f: Mm →Mn nicht surjektiv). Seien 1 ≤m < nund
+f: Mm →Mn. Dann giltMm ⊆Mn−1. Wir deﬁnieren eine Fortsetzung
+F: Mn−1 →Mn, F (x) :=
+
+
+
+f(x) für x∈Mm,
+f(1) für x∈Mn−1\Mm.
+Nach Schritt 1 ist die FortsetzungF nicht surjektiv. Also ist auchf nicht surjektiv.
+Schritt 3. Die Kontraposition von Schritt 2 zeigt, dass Surjektivität vonf: Mm →
+Mn impliziert, dassm≥n. □
+13. Oktober 2025 36Beweis von Satz 7.15(iii). Der Beweis folgt unmittelbar aus (i) und (ii). □
+Nach Deﬁnition 5.12 ist eine Menge X ̸= ∅endlich, wenn wir die Elemente X =
+{x1,...,x n}nummerieren können. Formal entspricht eine solche Nummerierung einer
+Bijektion φ: {1,...,n }→ X. Das folgende Korollar zeigt, dass die Kardinalitätn= #X
+tatsächlich eindeutig deﬁniert ist.
+Korollar 7.16. Ist X eine Menge und φ: {1,...,n } →X eine Bijektion, so ist die
+Menge endlich und die Kardinalität n = #X eindeutig festgelegt, d.h. es kann keine
+Bijektion ψ: {1,...,m }→ X mit m̸= n geben.
+Beweis. Sind φ: {1,...,n }→ X und ψ: {1,...,m }→ X Bijektionen, so ist die Kompo-
+sition φ−1 ◦ψ: {1,...,m }→{ 1,...,n }eine Bijektion. Satz 7.15 garantiertm= n. □
+Endlichkeit ist eine starke Eigenschaft von Mengen, wie Ihnen der folgende Satz illus-
+trieren soll.
+Satz 7.17. Seien X und Y endliche Mengen mit#X = #Y. Dann sind fürf: X →Y
+die folgenden Aussagen paarweise äquivalent:
+(i) f ist injektiv.
+(ii) f ist surjektiv.
+(iii) f ist bijektiv.
+Beweis. Aufgrund der Deﬁnition der Begriﬀe ist nur die Äquivalenz [(i)⇔(ii)] zu zeigen.
+Sei n:= #X = #Y ∈N0. Fürk∈N betrachten wir wiederMk := {1,...,k }und gliedern
+den Beweis in drei Schritte.
+Schritt 1 (o.B.d.A.X = Y = Mn und n≥2). Für n= 0gilt X = Y = ∅und
+damit ist nichts zu zeigen (denn alle Aussagen starten mit einem Allquantor). Fürn= 1
+gilt X = {x}, Y = {y}und f(x) =y. Also istf jedenfalls bijektiv. Ohne Beschränkung
+der Allgemeinheit gilt also im Folgendenn∈N mit n≥2. Nach Voraussetzung existieren
+Bijektionen φ: Mn →X und ψ: Mn →Y. Betrachtet man eine FunktionF: X →Y, so
+kann man auch die Komposition
+f := ψ−1 ◦F ◦φ: Mn →Mn
+betrachten. Daψ−1 und φ bijektiv sind, gelten die folgenden Äquivalenzen:
+f injektiv ⇐⇒F injektiv;
+f surjektiv ⇐⇒F surjektiv;
+f bijektiv ⇐⇒F bijektiv.
+Also reicht es, die behaupteten Äquivalenzen im SpezialfallX = Y = Mn zu zeigen.
+Schritt2( f: Mn →Mn injektiv ⇒fsurjektiv). WirzeigendieKontraposition
+f: Mn →Mn nicht surjektiv ⇒ f nicht injektiv
+13. Oktober 2025 37und setzen deshalb voraus, dassf: Mn →Mn nicht surjektiv ist. Es existiert also ein
+k ∈Mn mit k ∈Mn\f(Mn). Wir betrachten die Vertauschungσk,n : Mn →Mn aus dem
+Beweis von Satz 7.15. Wir deﬁnieren
+g:= σk,n ◦f: Mn →Mn.
+Daf(x) ̸= kfür allex∈Mn, giltg(x) ̸= nfür allex∈Mn. Also folgtg(Mn) ⊆Mn\{n}=
+Mn−1. Nach Satz 7.15 ist die Funktion
+˜g: Mn →Mn−1, ˜g(x) := g(x)
+nicht injektiv. Also ist auchg = σk,n ◦f nicht injektiv. Daσk,n bijektiv ist, ist alsof
+nicht injektiv.
+Schritt3( f: Mn →Mn surjektiv ⇒finjektiv). WirzeigendieKontraposition
+f: Mn →Mn nicht injektiv ⇒ f nicht surjektiv
+und setzen deshalb voraus, dass f: Mn → Mn nicht injektiv ist. Es existieren also
+j,k ∈ Mn mit f(j) = f(k). Ohne Beschränkung der Allgemeinheit gilt j < k. Mit
+der Vertauschungσk,n : Mn →Mn aus dem Beweis von Satz 7.15 deﬁnieren wir
+g:= f ◦σk,n : Mn →Mn.
+Dann giltg(j) =f(j) =f(k) =g(n). Mit der Restriktion
+g|Mn−1 : Mn−1 →Mn
+folgt dann insgesamtf(Mn) =g(Mn) =g|Mn−1 (Mn−1). Aufgrund von Satz 7.15 istg|Mn−1
+nicht surjektiv und deshalbg|Mn−1 (Mn−1) ⫋ Mn. Insbesondere ist auchf nicht surjektiv.
+□
+Kommentar. Die Phrase „Ohne Beschränkung der Allgemeinheit“, liebevoll abge-
+kürzt also.B.d.A., ﬁndet sich oft in mathematischen Texten und Präsentationen. Meist
+wird nicht weiter erklärt, warum man das darauf Folgende dann zusätzlich voraussetzen
+darf. Formal ist meist eine Fallunterscheidung nötig (z.B.n ∈{0,1}oder n ≥2 wie in
+Schritt 1 im Beweis von Satz 7.17) oder es braucht ein Argument, warum es reicht, den
+Spezialfall statt des allgemeinen Falls zu betrachten (siehe ebenfalls Schritt 1 im Beweis
+von Satz 7.17). Die Vortragenden bzw. Autor*innen gehen dann meist davon aus, dass
+den Leser*innen und Hörer*innen das „Standardargument eh klar“ ist. Wenn Sie also in
+Ihren Vorlesungen oder Skripten eino.B.d.A. sehen, dann sollten Sie (später und in aller
+Ruhe) explizit darüber nachdenken!
+Häuﬁg kommen Funktionen in Zusammenhang mit zusätzlicher mathematischer Struk-
+tur vor. Beispielhaft betrachten wir hier den Begriﬀ derGruppe.
+Deﬁnition 7.18. Ein Tripel(G,∗,e) heißtGruppe, wenn die folgenden Eigenschaften
+erfüllt sind:
+13. Oktober 2025 38(a) G̸= ∅ist eine Menge mite∈G;
+(b) ∗: G×G→G ist eine Funktion mit den folgenden Eingeschaften:
+(b1) ∀a,b,c ∈G: (a∗b) ∗c= a∗(b∗c) (Assoziativität)
+(b2) ∀a∈G: a∗e= a= e∗a (neutrales Element)
+(b3) ∀a∈G∃a−1 ∈G: a∗a−1 = e= a−1 ∗a (inverse Elemente)
+Lemma 7.19. Es sei(G,∗,e) eine Gruppe. Dann gelten die folgenden Aussagen:
+(i) Das neutrale Elemente ist eindeutig, d.h. nure erfüllt Deﬁnition 7.18(b2).
+(ii) Für jedesa∈G ist das inverse Elementa−1 in Deﬁnition 7.18(b3) eindeutig.
+Insbesondere gilte−1 = e.
+Beweis. Sei E ∈G ein Element, das Deﬁnition 7.18(b2) erfüllt. Dann folgt
+E = E∗e= e,
+d.h. das neutrale Element ist eindeutig. Seiena,b ∈G mit a∗b= e= b∗a. Dann folgt
+a−1 = a−1 ∗e= a−1 ∗(a∗b) = (a−1 ∗a) ∗b= e∗b= b,
+d.h. das inverse Element zua ist eindeutig. □
+Beispiel 7.20. Gruppen zählen zu den wichtigsten mathematischen Strukturen der Al-
+gebra. Sie kennen auch schon zahlreiche Beispiele:
+(i) Z mit der Addition (unda−1 := −a) bildet die Gruppe(Z,+,0).
+(ii) K ∈{Q,R,C}mit der Addition bildet die Gruppe(K,+,0).
+(iii) K ∈{Q,R,C}mit der Multiplikation bildet die Gruppe(K\{0}, ·,1).
+(iv) Ist X eine Menge, so bildetSX :=
+{
+f
+⏐⏐f: X →X Bijektion
+}
+mit der Komposition
+die Gruppe (SX,◦,IdX), die als symmetrische Gruppebzw. Permutations-
+gruppe bezeichnet wird.
+Kommentar. Oft schreibt man nur„SeiGeine Gruppe.“anstelle von „Sei(G,∗,e) eine
+Gruppe.“In diesem Fall verwendet man in Anlehnung an(K\{0}, ·,1)) in der Regel die
+Multiplikation ·(anstelle von∗) als Notation für die assoziative VerknüpfungG×G→G
+und 1 (anstelle von e) als Notation für das neutrale Element. Wichtig ist, dass dies nur
+Notation ist und nichts mit der Multiplikation inK\{0}zu tun hat.
+8. Kardinalität und Abzählbarkeit
+Eine MengeAist endlich, wenn sie entweder leer ist (mit#A:= 0) oder es einn∈N
+und eine Bijektionφ: {1,...,n }→ A gibt (mit#A := n). Diese Deﬁnition können wir
+nun aufabzählbare Mengenerweitern.
+13. Oktober 2025 39Deﬁnition 8.1.Eine MengeAist abzählbarbzw. abzählbar unendlich, wenn es eine
+Bijektion φ: N →A gibt. Eine Menge A ist höchstens abzählbar, wenn sie entwe-
+der endlich oder abzählbar ist. Eine MengeA ist überabzählbarbzw. überabzählbar
+unendlich, wenn sie nicht höchstens abzählbar ist.
+Lemma 8.2. Seien A,B Mengen mitA⊆B. IstB endlich, so ist auchA endlich.
+Beweis. Wir beweisen die Aussage mittels vollständiger Induktion nachn = #B. Wir
+behandeln den FallB = ∅separat. IstB = ∅, so ist auchA= ∅und damit endlich.
+Induktionsanfang n= 1. Ist n= 1, so istB = {b}. Dann ist entwederA= ∅oder
+A= {b}. In beiden Fällen istA endlich.
+Induktionsvoraussetzung. Sei n∈N. Es gelte die Aussage für alle MengenB mit
+#B = n.
+Induktionsschritt. Sei B eine Menge mit#B = n+ 1. Dann gibt es eine Bijektion
+φ: {1,...,n + 1}→ B. Ohne Beschränkung der Allgemeinheit giltA⫋ B (da fürA= B
+nichts zu zeigen ist). Also gibt es einb∈B\A. DeﬁniereB′:= B\{b}. Daφbijektiv ist,
+gibt es eink ∈{1,...,n + 1}mit φ(k) = b. Wir betrachten die bijektive Vertauschung
+σn+1,k : Mn+1 →Mn+1 aus dem Beweis von Satz 7.15 und deﬁnieren
+ψ:= φ◦σn+1,k : Mn+1 →B.
+Dann istψ eine Bijektion mitψ(n+ 1) =φ(k) =b. Insbesondere istψ|Mn : Mn →B′eine
+Bijektion. DaA⊆B′, folgt aus der Induktionsvoraussetzung, dassA endlich ist. □
+Lemma 8.3.Es seiAeine Menge. Ferner seiψ: N →Asurjektiv. Dann istAhöchstens
+abzählbar.
+Beweis. Wir müssen zeigen, dassAendlich oder abzählbar unendlich ist. Ohne Beschrän-
+kung der Allgemeinheit istA nicht endlich. Also müssen wir zeigen, dassA abzählbar
+unendlich ist. Dazu müssen wir eine bijektive FunktionφA : N →A konstruieren.
+Da ψ nicht injektiv sein muss, kann es Elementea∈A geben, deren Urbildψ−1({a})
+mehr als ein Element enthält. Dies müssen wir bei der Deﬁnition vonφA vermeiden. Wir
+deﬁnieren die FunktionφA induktiv fürn∈N:
+•φA(1) := ψ(1).
+Sind φA(1),...,φ A(n) bereits deﬁniert, so deﬁnieren wir zunächst
+•χ(n+ 1):= min
+{
+k∈N
+⏐⏐ψ(k) ̸∈{φA(1),...,φ A(n)}
+}
+.
+Da Anicht endlich undψ: N →Asurjektiv ist, istχ(n+ 1)wohldeﬁniert. Wir deﬁnieren
+•φA(n+ 1):= ψ(χ(n+ 1)).
+Wir müssen noch zeigen, dassφA bijektiv ist.
+13. Oktober 2025 40Schritt 1 (φA ist injektiv). Seien m,n ∈N mit φA(n) =φA(m). Ohne Beschrän-
+kung der Allgemeinheit giltn≤m. Nach Deﬁnition vonφA gilt
+φA(n) =φA(m) /∈{φA(1),...,φ A(m−1)}.
+Also mussn>m −1 gelten und damitn= m. Dies zeigt die Injektivität vonφA.
+Schritt 2. Wir zeigen mittels vollständiger Induktion, dass
+{ψ(1),...,ψ (n)}⊆{ φA(1),...,φ A(n)} für allen∈N.
+Induktionsanfang n= 1. Es gilt{ψ(1)}= {φA(1)}.
+Induktionsvoraussetzung. Sein∈N.Esgelte {ψ(1),...,ψ (n)}⊆{ φA(1),...,φ A(n)}.
+Induktionsschritt. Wir müssen zeigen, dass
+{ψ(1),...,ψ (n+ 1)}⊆{ φA(1),...,φ A(n+ 1)}.
+Nach Induktionsvoraussetzung reicht es zu zeigen, dassψ(n+1) ∈{φA(1),...,φ A(n+1)}
+gilt. Ohne Beschränkung der Allgemeinheit gilt ψ(n + 1) ̸∈ {φA(1),...,φ A(n)}. Aus
+der Deﬁnition von φA folgt dann aber sofort φA(k) = ψ(k) für alle k = 1,...,n und
+insbesondere φA(n+ 1) =ψ(n+ 1). Damit ist der Induktionsschritt gezeigt.
+Schritt 2 (φA ist surjektiv). Sei nuna∈A. Daψ surjektiv ist, gibt es einn∈N
+mit a = ψ(n) ∈{φA(1),...,φ A(n)}. Also existiert eink ≤n mit a = φA(k). Damit ist
+φA surjektiv. □
+Satz 8.4. Die Menge Z = {0,±1,±2,±3,... }der ganzen Zahlen ist abzählbar, d.h. es
+gibt eine BijektionφZ : N →Z.
+Beweis. Wir betrachten die Abbildungen
+φZ : N →Z, φ Z(n) :=
+
+
+
+−(n−1)/2, falls n ungerade,
+n/2, falls n gerade,
+ψZ : Z →N, ψ Z(z) :=
+
+
+
+2 |z|+ 1, falls z ≤0,
+2z, falls z >0.
+Wir können leicht nachrechnen, dass
+ψZ
+(
+φZ(n)
+)
+= n und φZ
+(
+ψZ(z)
+)
+= z für allen∈N und allez ∈Z
+gelten, d.h. es giltφZ ◦ψZ = IdZ und ψZ ◦φZ = IdN. Nach Satz 7.11 istφZ bijektiv (mit
+φ−1
+Z = ψZ) undZ damit abzählbar. □
+Satz8.5. Das kartesische ProduktN×N ist abzählbar, d.h. es gibt eine BijektionφN×N : N →
+N ×N.
+Beweis. Wir teilen den Beweis in fünf Schritte, in denen wirφN×N explizit konstruieren.
+13. Oktober 2025 411 2 3 4 5 · · ·
+1 (1, 1) (1, 2) (1, 3) (1, 4) (1, 5) · · ·
+2 (2, 1) (2, 2) (2, 3) (2, 4) (2, 5) · · ·
+3 (3, 1) (3, 2) (3, 3) (3, 4) (3, 5) · · ·
+4 (4, 1) (4, 2) (4, 3) (4, 4) (4, 5) · · ·
+5 (5, 1) (5, 2) (5, 3) (5, 4) (5, 5) · · ·
+... ... ... ... ... ... ...
+Abbildung 7. Visualisierung der BijektionφN×N : N ×N →N aus dem
+Beweis von Satz 8.5, wobeij vertikal undk horizontal aufgetragen ist.
+Schritt 1 (Konstruktion vonψN×N : N →N ×N). Wir zählenN ×N über seine
+Diagonalen ab, siehe Abbildung 7:
+•In der ersten Diagonale gibt es nur das Paar(1,1) mit 1 + 1 = 2.
+•In der zweiten Diagonale gibt es nur die Paare(2,1) und (1,2) mit 1 + 2 = 3.
+•In der dritte Diagonale gibt es nur die Paare(3,1), (2,2) und (1,3) mit 1 + 3 =
+4 = 2 + 2.
+•etc.
+Aufder ℓ-tenDiagonalevon N×N steheninsgesamt ℓPaare(j,k) ∈N×N mitj+k= ℓ+1.
+Bevor man in dieℓ-te Diagonale kommt, gehen alsoℓ−1 Diagonalen mit∑ℓ−1
+i=1 i= (ℓ−1)ℓ
+2
+Paaren voraus. In derℓ-ten Diagonale können wir die Paare(j,k) ∈N×N mitj+k= ℓ+1
+mittels dem zweiten Indexk abzählen. Insgesamt erhalten wir die Abbildung
+ψN×N : N ×N →N, ψ N×N(j,k) := (j+ k−2)(j+ k−1)
+2 + k
+Damitgilt ψN×N(1,1) = 1,ψN×N(2,1) = 2,ψN×N(1,2) = 3,ψN×N(3,1) = 4,ψN×N(2,2) = 5,
+ψN×N(1,3) = 6, etc.
+Schritt2(Konstruktionvon φN×N : N ×N →N). Zun∈N existiertein(eindeu-
+tiges) maximalesℓ∈N mit (ℓ−1)ℓ
+2 <n. Deﬁnierek := n−(ℓ−1)ℓ
+2 ∈N. Mittels indirektem
+Beweis zeigen wirk ≤ℓ. Dazu machen wir die Annahmek > ℓ, d.h. es existierti ∈N
+mit ℓ+ i= k= n−(ℓ−1)ℓ
+2 . Daraus folgt
+n>n −i= (ℓ−1)ℓ
+2 + ℓ= ℓ2 + ℓ
+2 = ℓ(ℓ+ 1)
+2 .
+13. Oktober 2025 42Dies steht aber im Widerspruch zur Maximalität vonℓ (denn ℓ+ 1erfüllt dieselbe Be-
+dingung). Dies zeigtk ≤ℓ und erlaubt die Deﬁnition vonj := ℓ−k+ 1∈N. Mit dieser
+Konstruktion erhalten wir eine Funktion
+φN×N : N ×N →N, φ N×N(n) := (j,k)
+Schritt 3 (ψN×N ◦φN×N = IdN). Sein∈N. Nach Konstruktion folgt ausφN×N(n) =
+(j,k), dassℓ= j+ k−1 und (ℓ−1)ℓ
+2 + k= n. Dies zeigt
+ψN×N (j,k) =(j+ k−2)(j+ k−1)
+2 + k= (ℓ−1)ℓ
+2 + k= n,
+also ψN×N
+(
+φN×N(n)
+)
+= n.
+Schritt 4 (φN×N ◦ψN×N = IdN×N). Seien j,k ∈N. Dann gilt
+ψN×N (j,k) =(j+ k−2)(j+ k−1)
+2 + k=: n.
+Oﬀensichtlich erfüllt˜ℓ:= j+ k−1 damit (˜ℓ−1)˜ℓ
+2 < (˜ℓ−1)˜ℓ
+2 + k= n. Ferner gilt
+˜ℓ(˜ℓ+ 1)
+2 =
+j+k−1∑
+i=1
+i= (j+ k−1) +
+j+k−2∑
+i=1
+i= (j+ k−1) +(j+ k−2)(j+ k−1)
+2
+= (j+ k−1) + (n−k) =n+ j−1 ≥n,
+d.h. ˜ℓ ist maximal mit(˜ℓ−1)˜ℓ
+2 <n. Es folgtφN×N(n) = (˜j,˜k) mit
+˜k= n−(˜ℓ−1)˜ℓ
+2 = k,
+˜j = ˜ℓ−˜k+ 1 = (j+ k−1) −k+ 1 =j.
+Dies zeigtφN×N
+(
+ψN×N(j,k)
+)
+= (j,k).
+Schritt 5. Nach Satz 7.11 istφN×N bijektiv (mit φ−1
+N×N = ψN×N) und N ×N damit
+abzählbar. □
+Korollar 8.6.Die MengeQ der rationalen Zahlen ist abzählbar.
+Beweis. Für jede Zahlx∈Q existieren Zählerz ∈Z und Nennern∈N mit x= z/n. Sei
+φN×N : N →N ×N die Bijektion von Satz 8.5. SeiφZ : N →Z die Bijektion von Satz 8.4.
+Dann deﬁnieren wir die Abbildung
+φQ : N →Q vermöge φQ(n) := φZ(j)/k und (j,k) =φN×N(n).
+Dann istφQ surjektiv. Aus Lemma 8.3 folgt, dassQ höchstens abzählbar ist. DaN ⊆Q,
+kann Q nach der Kontraposition von Lemma 8.2 nicht endlich sein. Also istQ abzählbar
+unendlich. □
+Korollar 8.7.Die abzählbare VereinigungA:= ⋃
+j∈N Aj abzählbar unendlicher Mengen
+Aj ist abzählbar unendlich.
+13. Oktober 2025 43Beweis. Fürj ∈N seiφj : N →Aj eine Bijektion. Dann istφ: N×N →A,φ(j,k) := φj(k)
+surjektiv. In Verbindung mit der BijektionφN×N von Satz 8.5 gibt es damit eine Surjektion
+φA := φ◦φN×N : N →A. Aus Lemma 8.3 folgt, dassAhöchstens abzählbar ist. DaA1 ⊆A,
+kann Anach der Kontraposition von Lemma 8.2 nicht endlich sein. Also istAabzählbar
+unendlich. □
+Satz 8.8 (Cantor’sches Diagonalverfahren).R ist überabzählbar.
+Beweis. Wir betrachten das Intervall[0,1] :=
+{
+x ∈R
+⏐⏐0 ≤x ≤1
+}
+. Im Vorgriﬀ auf den
+späteren Beweis verwenden wir die Dezimaldarstellung von Zahlenx ∈[0,1]: Für jedes
+x∈[0,1] gibt es Ziﬀernak ∈{0,1,..., 9}für allek∈N, sodass sichx in der Form
+x= 0.a1a2a3a4 ...
+schreiben lässt – wobei dieak in dieser Darstellung als dezimale Ziﬀern und nicht als
+Produkt der Ziﬀern verstanden werden. Seiψ: N →[0,1] eine Aufzählung von Zahlen in
+[0,1]. Wir stellen alle Zahlenψ(j) mittels ihrer Ziﬀernajk ∈{0,1,..., 9}dar:
+ψ(1) = 0.a11a12a13a14 ...
+ψ(2) = 0.a21a22a23a24 ...
+ψ(3) = 0.a31a32a33a34 ...
+etc.
+Wir deﬁnieren die Zahl
+y:= 0.b1b2b3b4 ... mit den Ziﬀern bk :=
+
+
+
+4, falls akk = 5,
+5, falls akk ̸= 5.
+Dann gilty̸= ψ(j) für allej ∈N, da für diek-ten Ziﬀern vonygemäß Deﬁnitionbk ̸= akk
+gilt. Also kannψ nicht surjektiv sein. Es gibt also keine Surjektionψ: N →[0,1] und
+insbesondere keine BijektionN →R. Also mussR überabzählbar sein. □
+Satz 8.9.Sei Aeine Menge undφ: A→P(A). Dann istφnicht surjektiv. Insbesondere
+ist P(N) nicht abzählbar.
+Beweis. Wir adaptieren das Cantor’sche Diagonalverfahren aus dem Beweis von Satz 8.8.
+Sei φ: A →P(A). Um zu zeigen, dassφ nicht surjektiv sein kann, betrachten wir die
+Menge Y :=
+{
+x∈A
+⏐⏐x̸∈φ(x)
+}
+. Wir zeigenY ̸∈φ(A). Dazu argumentieren wir indirekt
+und nehmen Y ∈φ(A) an. Dann gibt es einy ∈A mit φ(y) = Y. Wir machen eine
+Fallunterscheidung:
+Fall 1 (y∈Y). Falls y ∈Y, so erhalten wir aus der Deﬁnition vonY den Wider-
+spruch y̸∈φ(y) =Y.
+Fall 1 (y̸∈Y). Falls y ̸∈Y, so erhalten wir aus der Deﬁnition vonY den Wider-
+spruch y∈φ(y) =Y.
+13. Oktober 2025 44Da beide Fälle auf einen Widerspruch führen, ist unsere Annahme falsch, d.h. es gilt
+Y ̸∈φ(A). Insbesondere ist jedesφ: A→P(A) nicht surjektiv. □
+Bemerkung 8.10. Für eine endliche MengeA folgt der Beweis von Satz 8.9 auch aus
+Satz 5.13. Vollständige Induktion zeigt, dassn <2n für alle n ∈N0 gilt. Mit n := #A
+und Satz 5.13 folgt#P(A) = 2n > n= #A. Nach dem Schubfachprinzip von Satz 7.15
+kann es keine surjektive Abbildungφ: A→P(A) geben.
+Bemerkung 8.11. Man kann zeigen, dass eine Bijektionφ: R →P(N) existiert, d.h.
+P(N) ist nicht nur überabzählbar, sondern „genauso überabzählbar“ wieR.
+Kommentar. Mit den Techniken dieses Abschnitts haben Sie auch vollständiges Ver-
+ständnis von Hilberts Hotel: Wenn ein Hotel nur endlich viele Zimmer hat, die alle voll
+belegt sind, dann ist kein Platz mehr für einen weiteren Gast. Wenn ein Hotel aber ab-
+zählbar viele Zimmer hat, so ist immer Platz für abzählbar-viele zusätzliche Gäste, auch
+wenn alle Zimmer bereits belegt sind.
+9. Die natürlichen Zahlen
+In den vergangenen Abschnitten haben wir die natürlichen ZahlenN = {1,2,3,... }
+und ihre schulmathematischen Eigenschaften vorausgesetzt und auf vielfältige Weise ge-
+nutzt (z.B. zur Deﬁnition von höchstens abzählbaren Mengen). Um unserem Vorgehen
+eine formale Grundlage zu geben, müssen wir noch zeigen, dassN gewissermaßen eindeu-
+tig ist, sodass die Verwendung einer „anderen Menge natürlicher Zahlen“ auf dieselben
+Deﬁnitionen und Ergebnisse führt.
+Formal folgt die Existenz vonN aus den Axiomen der Mengenlehre. Die sogenann-
+te John-von-Neumann-Konstruktion konstruiert N0 = {0,1,2,3,... }auf folgende
+Weise
+0 := ∅,
+1 := {0} = {∅},
+2 := {0,1} = {∅,{∅}},
+3 := {0,1,2} = {∅,{∅},{∅,{∅}}}, etc,
+d.h. der Nachfolger vonnist deﬁniert als(n+1) := n∪{n}. Dabei ist wichtig zu bemerken,
+dass n und n+ 1Mengen sind und dass die Deﬁnition des Nachfolgers lediglich auf der
+Mengenvereinigung basiert. Natürlich kann dieses Vorgehen nicht nur zur Konstruktion
+von N0, sondern auch zur Konstruktion vonN herangezogen werden.
+Die folgende Deﬁnition präzisiert die Eigenschaften der John-von-Neumann-Konstruk-
+tion.
+13. Oktober 2025 45Deﬁnition 9.1. Eine Menge N ̸= ∅, genauer ein Tripel(N,1,(·)′), heißtnatürliche
+Zahlen, wenn es eine Nachfolgerabbildung(·)′: N →N und ein ausgezeichnetes „erstes
+Element“1 ∈N gibt, sodass die folgendenPeano-Axiome gelten:
+(N1) Die Abbildung(·)′ ist injektiv
+(N2) ∀n∈N : n′̸= 1 (1 ist kein Nachfolger)
+(N3) ∀M ⊆N :
+[(
+1 ∈M ∧(∀n∈M : n′∈M)
+)
+⇒M = N
+]
+(Induktionsprinzip)
+Bemerkung 9.2. Wir wissen, dass die aus der Schule bekannten natürlichen ZahlenN
+die Peano-Axiome(N1)–(N3) erfüllen mit n′ := n+ 1für n ∈N. Wir wollen in diesem
+Abschnitt zunächst zeigen, dass jede MengeN mit (N1)–(N3)defacto mitN übereinstimmt
+(d.h. N ist eindeutig); siehe Korollar 9.4. Ferner werden wir zeigen, dass die Peano-
+Axiome (N1)–(N3) insbesondere ausreichen, um Addition, Multiplikation und Ordnung
+auf N zu deﬁnieren, sodass sichN wie N verhält.
+Der folgende Rekursionssatz ist das zentrale mathematische Argument in diesem Ab-
+schnitt.
+Satz 9.3 (Rekursionssatz).Es seiN eine Menge natürlicher Zahlen gemäß Deﬁniti-
+on 9.1. Es seiA ̸= ∅eine Menge, a ∈A und g: A →A eine Funktion, die sogenannte
+Rekursionsfunktion. Dann existiert eine eindeutige Funktionφ: N →A mit den fol-
+genden beiden Eigenschaften:
+(a) φ(1) =a,
+(b) ∀n∈N : φ(n′) =g(φ(n)).
+Bevor wir Satz 9.3 beweisen, zeigen wir, wie daraus die Eindeutigkeit vonN folgt.
+Beachten Sie, dass die behauptete Funktionφ: N → ˜N im folgenden Korollar nicht nur
+eine Bijektion ist, sondern auch die Struktur erhält (konkret das ausgezeichnete Element
+und die Nachfolgerabbildung).
+Korollar 9.4 (Eindeutigkeit vonN). Seien N, ˜N zwei Mengen natürlicher Zahlen
+gemäß Deﬁnition 9.1. Dann existiert eine eindeutige Bijektionφ: N → ˜N mit
+(i) φ(1) =˜1,
+(ii) ∀n∈N : φ(n′) =φ(n)′,
+wobei1 ∈N und ˜1 ∈ ˜N die ausgezeichneten Elemente seien. Beachte gegebenenfalls, dass
+in (ii) n′ der Nachfolger inN ist, währendφ(n)′ der Nachfolger in ˜N ist.
+Beweis von Korollar 9.4. Im Folgenden wenden wir den Rekursionssatz vier Mal an:
+Schritt 1 (Kandidat fürφ: N →˜N). Wir wenden den Rekursionssatz an fürN,
+A= ˜N, a= ˜1 und g(˜n) := ˜n′. Dann existiert eine eindeutige Funktionφ: N → ˜N mit
+φ(1) =˜1 und ∀n∈N : φ(n′) =φ(n)′
+Beachte, dass diesesφ der einzige Kandidat für die behauptete Bijektion ist.
+13. Oktober 2025 46Schritt 2 (Kandidat für Inverse vonφ). Wir wenden den Rekursionssatz an für
+˜N, A= N, a= 1und g(n) := n′. Dann existiert eine eindeutige Funktionψ: ˜N →N mit
+φ(˜1) = 1 und ∀˜n∈ ˜N : ψ(˜n′) =ψ(˜n)′
+Schritt 3 (ψ◦φ= IdN). Die Funktionψ◦φ: N →N hat die folgenden Eigen-
+schaften:
+(a) (ψ◦φ)(1) =ψ(φ(1)) =ψ(˜1) = 1,
+(b) ∀n∈N : (ψ◦φ)(n′) =ψ(φ(n′)) =ψ(φ(n)′) =ψ(φ(n))′= [(ψ◦φ)(n)]′.
+Wir wenden den Rekursionssatz an fürN, A = N, a = 1 und g(n) := n′: Da auchIdN
+die Eigenschaften (a)–(b) hat, folgt aus der bewiesenen Eindeutigkeit im Rekursionssatz,
+dass ψ◦φ= IdN .
+Schritt 4 (φ◦ψ= Id˜N). Die Identitätφ◦ψ= Id˜N folgt wie in Schritt 3, wenn wir
+den Rekursionssatz für ˜N, A= ˜N, a= ˜1 und g(˜n) := ˜n′ anwenden.
+Schritt 5. Aus Schritt 1 folgt die Existenz vonφ. Mit Satz 7.11 folgt aus Schritt 3–4,
+dass φ bijektiv ist mitφ−1 = ψ. □
+Beweis von Satz 9.3. ...TO BE CONTINUED... □
+13. Oktober 2025 47

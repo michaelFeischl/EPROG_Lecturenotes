@@ -1,0 +1,25 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: EPROG 2025
+author: Michael Feischl
+logo: logo.png
+
+execute:
+  execute_notebooks: off
+
+parse:
+  myst_enable_extensions:
+    - html_image
+    - amsmath
+    - dollarmath
+
+exclude_patterns:
+  - '.venv'
+  - 'data'
+  - 'HTML'
+  - 'illustrations'
+  - 'misc'
+  - 'UE'
+
+

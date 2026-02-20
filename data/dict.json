@@ -1,0 +1,16 @@
+{
+    "name": "Alice",
+    "age": 30,
+    "is_student": false,
+    "scores": [
+        95,
+        88,
+        76
+    ],
+    "address": {
+        "city": "New York",
+        "zip": "10001"
+    },
+    "height": 1.68,
+    "hobbies": null
+}
