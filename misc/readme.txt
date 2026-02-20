@@ -15,9 +15,13 @@ all can be installed via "pip install ..."
 - pip install jupyter-book
 - pip install ghp-import
 
+
+Migration von altem JupyterBook mit
+jupyter book
+
 Im Ordner EPROG_2025:
 - Die HTML Seite erzeugen mit
-jupyter-book build ../EPROG_2025 
+jupyter-book build --html
 
 - Auf Github publizieren mit 
 ghp-import -n -p -f _build/html

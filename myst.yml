@@ -1,0 +1,43 @@
+version: 1
+project:
+  title: EPROG 2025
+  authors:
+    - name: Michael Feischl
+  exclude:
+    - .venv
+    - data
+    - HTML
+    - illustrations
+    - misc
+    - UE
+  toc:
+    - file: intro.md
+    - file: 01_intro.ipynb
+    - file: 02_ifelse.ipynb
+    - file: 03_datatypes.ipynb
+    - file: 04_for.ipynb
+    - file: 05_functions.ipynb
+    - file: 06_mutability.ipynb
+    - file: 07_comments.ipynb
+    - file: 08_recursions.ipynb
+    - file: 09_loops.ipynb
+    - file: 10_tryexcept.ipynb
+    - file: 11_classes.ipynb
+    - file: 12_AI.ipynb
+    - file: 13_viz.ipynb
+    - file: 14_dataio.ipynb
+    - file: 15_complexity.ipynb
+    - file: 16_numpyBasics.ipynb
+    - file: 17_numpyMV.ipynb
+    - file: 18_numpyPerformance.ipynb
+    - file: 19_numbers.ipynb
+    - file: 20_inheritance.ipynb
+    - file: 21_sympy.ipynb
+    - file: 22_trees.ipynb
+    - file: 23_nn.ipynb
+site:
+  template: book-theme
+  options:
+    logo: logo.png
+    folders: true
+    base_url: /EPROG_Lecturenotes/
